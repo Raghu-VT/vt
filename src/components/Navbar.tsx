@@ -86,7 +86,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               <Phone size={12} />
               <span>+91-92480-70008</span>
             </a>
-            <a href="mailto:info@venkitravel.com" className="hover:text-primary-900 transition-colors" style="text-decoration:none"> 
+            <a href="mailto:info@venkitravel.com" className="hover:text-primary-900 transition-colors" style={{text-decoration:'none'}}> 
               info@venkitravel.com
             </a>
           </div>
