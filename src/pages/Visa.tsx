@@ -209,22 +209,21 @@ export default function Visa({ onNavigate }: VisaProps) {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { country: 'Australia', label: 'Australia Tourist Visa Checklist', file: 'AUSTRALIA_TOURIST_VISA_CHECKLIST.pdf' },
-              { country: 'Brazil', label: 'Brazil Tourist Visa Checklist', file: 'BRAZIL_TOURIST_VISA_CHECKLIST.pdf' },
-              { country: 'Canada', label: 'Canada Checklist', file: 'CANADA_CHECKLIST.pdf' },
-              { country: 'Gibraltar', label: 'Gibraltar Tourist Visa Details', file: 'GIBRALTAR_TOURIST_VISA_DETAILS.pdf' },
-              { country: 'New Zealand', label: 'New Zealand Tourist & Visit Visa Checklist', file: 'NEWZELAND_TOURIST_AND_VISIT_VISA_CHECKLIST.pdf' },
-              { country: 'Saudi Arabia', label: 'Saudi Arabia Tourist Visa Checklist', file: 'SAUDI_ARABIA_TOURIST_VISA_CHECKLIST.pdf' },
-              { country: 'Schengen', label: 'Schengen Tourist Visa Required Documents', file: 'SCHENGEN_TOURIST_VISA_REQUIRED_DOCUMENTS.pdf' },
-              { country: 'Singapore', label: 'Singapore Tourist & Visit Visa Checklist', file: 'SINGAPORE_TOURIST_AND_VISIT_VISA_CHECKLIST.pdf' },
-              { country: 'South Africa', label: 'South Africa Tourist Visa Checklist', file: 'SOUTH_AFRICA_TOURIST_VISA_CHECKLIST.pdf' },
+              { country: 'Australia', label: 'Australia Tourist Visa Checklist', file: 'AUSTRALIA TOURIST VISA CHECKLSIT.pdf' },
+              { country: 'Brazil', label: 'Brazil Tourist Visa Checklist', file: 'BRAZIL TORUIST VISA CHECKLIST.pdf' },
+              { country: 'Canada', label: 'Canada Checklist', file: 'CANADA CHECKLIST.pdf' },
+              { country: 'Gibraltar', label: 'Gibraltar Tourist Visa Details', file: 'GIBRALTAR TOURIST VISA DETAILS.pdf' },
+              { country: 'New Zealand', label: 'New Zealand Tourist & Visit Visa Checklist', file: 'NEWZELAND TOURIST AND VISIT VISA CHECKLIST.pdf' },
+              { country: 'Saudi Arabia', label: 'Saudi Arabia Tourist Visa Checklist', file: 'SAUDI ARABIA TOURIS VISA CHECKLIST.pdf' },
+              { country: 'Schengen', label: 'Schengen Tourist Visa Required Documents', file: 'SCHENGEN TOURIST VISA REQUIRED DOCUMENTS (2) (1).pdf' },
+              { country: 'Singapore', label: 'Singapore Tourist & Visit Visa Checklist', file: 'SINGAPORE TOURIST AND VISIT VISA CHECKLIST.pdf' },
+              { country: 'South Africa', label: 'South Africa Tourist Visa Checklist', file: 'SOUTH AFRICA TOURIST VISA CHECKLIST.pdf' },
             ].map((doc) => (
               <a
                 key={doc.country}
-                href={`/${doc.file}`}
+                href={`/static/${doc.file}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                download
                 className="flex items-center gap-4 bg-white rounded-xl p-5 shadow-sm border border-neutral-100 hover:border-secondary-400 hover:shadow-md transition-all group"
               >
                 <div className="w-11 h-11 rounded-lg bg-red-50 flex items-center justify-center flex-shrink-0 group-hover:bg-red-100 transition-colors">
