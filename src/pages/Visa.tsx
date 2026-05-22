@@ -220,23 +220,31 @@ export default function Visa({ onNavigate }: VisaProps) {
               { country: 'South Africa', label: 'South Africa Tourist Visa Checklist', file: 'SOUTH_AFRICA_TOURIST_VISA_CHECKLIST.pdf' },
          { country: 'Vietnam', label: 'Vietnam Tourist Visa Checklist', file: 'VIETNAM_TOURIST_VISA_CHECKLIST.pdf' },
             ].map((doc) => (
-              <a
-                key={doc.country}
-                href={`/static/${doc.file}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 bg-white rounded-xl p-5 shadow-sm border border-neutral-100 hover:border-secondary-400 hover:shadow-md transition-all group"
-              >
-                <div className="w-11 h-11 rounded-lg bg-red-50 flex items-center justify-center flex-shrink-0 group-hover:bg-red-100 transition-colors">
-                  <FileText size={20} className="text-red-500" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm font-medium text-neutral-800 leading-snug group-hover:text-primary-900 transition-colors">{doc.label}</p>
-                  <p className="text-xs text-neutral-400 mt-0.5">PDF Document</p>
-                </div>
-                <Download size={16} className="text-neutral-400 group-hover:text-secondary-500 transition-colors flex-shrink-0" />
-              </a>
-            ))}
+  <div
+    key={doc.country}
+    onClick={() => window.open(`/static/${doc.file}`, "_blank")}
+    className="flex items-center gap-4 bg-white rounded-xl p-5 shadow-sm border border-neutral-100 hover:border-secondary-400 hover:shadow-md transition-all group cursor-pointer"
+  >
+    <div className="w-11 h-11 rounded-lg bg-red-50 flex items-center justify-center flex-shrink-0 group-hover:bg-red-100 transition-colors">
+      <FileText size={20} className="text-red-500" />
+    </div>
+
+    <div className="flex-1 min-w-0">
+      <p className="text-sm font-medium text-neutral-800 leading-snug group-hover:text-primary-900 transition-colors">
+        {doc.label}
+      </p>
+
+      <p className="text-xs text-neutral-400 mt-0.5">
+        PDF Document
+      </p>
+    </div>
+
+    <Download
+      size={16}
+      className="text-neutral-400 group-hover:text-secondary-500 transition-colors flex-shrink-0"
+    />
+  </div>
+))}
           </div>
         </section>
 
