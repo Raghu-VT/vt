@@ -218,6 +218,7 @@ export default function Visa({ onNavigate }: VisaProps) {
               { country: 'Schengen', label: 'Schengen Tourist Visa Required Documents', file: 'SCHENGEN TOURIST VISA REQUIRED DOCUMENTS (2) (1).pdf' },
               { country: 'Singapore', label: 'Singapore Tourist & Visit Visa Checklist', file: 'SINGAPORE TOURIST AND VISIT VISA CHECKLIST.pdf' },
               { country: 'South Africa', label: 'South Africa Tourist Visa Checklist', file: 'SOUTH AFRICA TOURIST VISA CHECKLIST.pdf' },
+         { country: 'Vietnam', label: 'Vietnam Tourist Visa Checklist', file: 'VIETNAM TOURIST VISA CHECKLIST.pdf' },
             ].map((doc) => (
               <a
                 key={doc.country}
