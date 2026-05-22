@@ -209,7 +209,7 @@ export default function Visa({ onNavigate }: VisaProps) {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { country: 'Australia', label: 'Australia Tourist Visa Checklist', file: 'AUSTRALIA TOURIST VISA CHECKLSIT.pdf' },
+              { country: 'Australia', label: 'Australia Tourist Visa Checklist', file: 'AUSTRALIA_TOURIST_VISA_CHECKLSIT.pdf' },
               { country: 'Brazil', label: 'Brazil Tourist Visa Checklist', file: 'BRAZIL TORUIST VISA CHECKLIST.pdf' },
               { country: 'Canada', label: 'Canada Checklist', file: 'CANADA CHECKLIST.pdf' },
               { country: 'Gibraltar', label: 'Gibraltar Tourist Visa Details', file: 'GIBRALTAR TOURIST VISA DETAILS.pdf' },
