@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
-import { supabase } from '../lib/supabase';
 
 interface ContactProps {
   onNavigate: (page: string) => void;
@@ -55,12 +54,26 @@ export default function Contact({ onNavigate: _onNavigate }: ContactProps) {
     e.preventDefault();
     setSubmitting(true);
     setError('');
-    const { error: dbError } = await supabase.from('contact_inquiries').insert([form]);
-    if (dbError) {
-      setError('Something went wrong. Please try again or call us directly.');
-    } else {
-      setSubmitted(true);
-      setForm({ name: '', email: '', phone: '', subject: '', message: '' });
+    try {
+      const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+      const anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+      const res = await fetch(`${supabaseUrl}/functions/v1/send-contact-email`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${anonKey}`,
+        },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+      if (!res.ok || data.error) {
+        setError(data.error || 'Something went wrong. Please try again or call us directly.');
+      } else {
+        setSubmitted(true);
+        setForm({ name: '', email: '', phone: '', subject: '', message: '' });
+      }
+    } catch {
+      setError('Network error. Please try again or email us at info@venkitravel.com');
     }
     setSubmitting(false);
   };

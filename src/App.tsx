@@ -27,16 +27,31 @@ const isAdminRoute = () =>
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
+  const [pendingSection, setPendingSection] = useState<string | null>(null);
   const [isAdmin] = useState(isAdminRoute);
 
   const navigate = (page: string) => {
-    setCurrentPage(page as Page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const [basePage, section] = page.split('#');
+    setCurrentPage(basePage as Page);
+    if (section) {
+      setPendingSection(section);
+    } else {
+      setPendingSection(null);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [currentPage]);
+    if (pendingSection) {
+      requestAnimationFrame(() => {
+        const el = document.getElementById(pendingSection);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        setPendingSection(null);
+      });
+    }
+  }, [currentPage, pendingSection]);
 
   if (isAdmin) {
     return <AdminApp />;

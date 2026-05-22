@@ -114,34 +114,34 @@ export default function About({ onNavigate }: AboutProps) {
 
       {/* Founder Profile */}
       <section className="py-16 px-4 max-w-7xl mx-auto">
-        <div className="bg-gradient-to-r from-primary-900 to-secondary-700 rounded-3xl p-8 md:p-12 text-white grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-          <div className="flex justify-center md:justify-start">
-            <img
-              src="./Founder_Image.png"
-              alt="Raghu Babu"
-              className="w-50 h-100  rounded-full"
-            />
-          </div>
-          <div className="md:col-span-2">
-            <p className="text-secondary-300 text-sm uppercase tracking-wider mb-2">Founder & CEO</p>
-            <h2 className="font-heading text-3xl font-700 mb-4">Raghu Babu</h2>
-            <p className="text-neutral-200 leading-relaxed mb-4">
-         At the heart of Venkitravel.com is our founder and CEO, Mr. Babu, a seasoned leader with over 25 years of experience in the travel industry. Born in a small town in Andhra Pradesh, Mr. Babu’s passion for exploring new places and creating memorable travel experiences has been the driving force behind his career. A graduate of Nagarjuna University, his journey began with an esteemed travel organization, where he gained valuable insights into the industry and nurtured a vision to make travel seamless and accessible for everyone.
-
-            </p>
-            <p className="text-neutral-200 leading-relaxed mb-4">
-          In 2004, Mr. Babu turned his vision into reality by founding Venkitravel.com. Starting with air ticket booking, he gradually expanded the company’s offerings to include a wide range of travel services such as Forex Services, Hotel Booking, Cruise Booking, Tour Packages, Visa Processing, Passport Assistance, Travel Insurance, Transport and Transfers, and Accommodation Services. Today, Venkitravel.com is a trusted name in the travel industry, recognized for its customer-first approach and exceptional service quality
-            </p>
-            <p className="text-neutral-200 leading-relaxed mb-4">
-        Mr. Babu’s leadership has been pivotal in navigating challenges and driving innovation. By embracing digital transformation, forming strategic global partnerships, and fostering a customer-centric culture, he has steered Venkitravel.com toward remarkable growth. The recent expansion into South Africa marks a significant milestone, reflecting the company’s commitment to delivering world-class travel services on a global scale.
-
-            </p>
-            <p className="text-neutral-200 leading-relaxed mb-4">
-          Under his guidance, Venkitravel.com operates on a foundation of values: trust, integrity, innovation, and excellence. Mr. Babu is equally committed to sustainability, ethical travel practices, and giving back to the community through impactful CSR initiatives. These principles not only define the company’s operations but also resonate with its customers, many of whom choose Venkitravel.com based on trust and strong referrals.
- </p>
+        <div className="bg-gradient-to-r from-primary-900 to-secondary-700 rounded-3xl overflow-hidden text-white">
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="relative">
+              <img
+                src="/Founder_Image.png"
+                alt="Raghu Babu"
+                className="w-full h-full object-cover object-top min-h-[400px]"
+              />
+            </div>
+            <div className="p-8 md:p-12 flex flex-col justify-center">
+              <p className="text-secondary-300 text-sm uppercase tracking-wider mb-2">Founder & CEO</p>
+              <h2 className="font-heading text-3xl font-700 mb-4">Raghu Babu</h2>
               <p className="text-neutral-200 leading-relaxed mb-4">
-              At Venkitravel.com, we are proud to be guided by Mr. Babu’s vision and unwavering dedication to redefining travel for a global audience.
-            </p>
+                At the heart of Venkitravel.com is our founder and CEO, Mr. Babu, a seasoned leader with over 25 years of experience in the travel industry. Born in a small town in Andhra Pradesh, Mr. Babu’s passion for exploring new places and creating memorable travel experiences has been the driving force behind his career. A graduate of Nagarjuna University, his journey began with an esteemed travel organization, where he gained valuable insights into the industry and nurtured a vision to make travel seamless and accessible for everyone.
+              </p>
+              <p className="text-neutral-200 leading-relaxed mb-4">
+                In 2004, Mr. Babu turned his vision into reality by founding Venkitravel.com. Starting with air ticket booking, he gradually expanded the company’s offerings to include a wide range of travel services such as Forex Services, Hotel Booking, Cruise Booking, Tour Packages, Visa Processing, Passport Assistance, Travel Insurance, Transport and Transfers, and Accommodation Services. Today, Venkitravel.com is a trusted name in the travel industry, recognized for its customer-first approach and exceptional service quality.
+              </p>
+              <p className="text-neutral-200 leading-relaxed mb-4">
+                Mr. Babu’s leadership has been pivotal in navigating challenges and driving innovation. By embracing digital transformation, forming strategic global partnerships, and fostering a customer-centric culture, he has steered Venkitravel.com toward remarkable growth. The recent expansion into South Africa marks a significant milestone, reflecting the company’s commitment to delivering world-class travel services on a global scale.
+              </p>
+              <p className="text-neutral-200 leading-relaxed mb-4">
+                Under his guidance, Venkitravel.com operates on a foundation of values: trust, integrity, innovation, and excellence. Mr. Babu is equally committed to sustainability, ethical travel practices, and giving back to the community through impactful CSR initiatives. These principles not only define the company’s operations but also resonate with its customers, many of whom choose Venkitravel.com based on trust and strong referrals.
+              </p>
+              <p className="text-neutral-200 leading-relaxed">
+                At Venkitravel.com, we are proud to be guided by Mr. Babu’s vision and unwavering dedication to redefining travel for a global audience.
+              </p>
+            </div>
           </div>
         </div>
       </section>

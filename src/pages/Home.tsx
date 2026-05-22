@@ -28,18 +28,18 @@ const heroSlides = [
 ];
 
 const services = [
-  { icon: Plane, title: 'Flight Booking', desc: 'Domestic & international flights at best fares', page: 'services', color: 'bg-blue-50 text-blue-600' },
-  { icon: Hotel, title: 'Hotel Booking', desc: 'Luxury resorts to budget stays worldwide', page: 'services', color: 'bg-teal-50 text-teal-600' },
-  { icon: Ship, title: 'Cruise Booking', desc: 'Unforgettable voyages on luxury liners', page: 'services', color: 'bg-cyan-50 text-cyan-600' },
+  { icon: Plane, title: 'Flight Booking', desc: 'Domestic & international flights at best fares', page: 'services#flight-booking', color: 'bg-blue-50 text-blue-600' },
+  { icon: Hotel, title: 'Hotel Booking', desc: 'Luxury resorts to budget stays worldwide', page: 'services#hotel-booking', color: 'bg-teal-50 text-teal-600' },
+  { icon: Ship, title: 'Cruise Booking', desc: 'Unforgettable voyages on luxury liners', page: 'services#cruise-booking', color: 'bg-cyan-50 text-cyan-600' },
   { icon: Package, title: 'Tour Packages', desc: 'Domestic, international & customized packages', page: 'packages', color: 'bg-orange-50 text-orange-600' },
-  { icon: FileText, title: 'Visa Processing', desc: 'Tourist, business & student visas for 50+ countries', page: 'visa', color: 'bg-green-50 text-green-600' },
-  { icon: Globe, title: 'Passport Assistance', desc: 'New applications, renewals & fast-track processing', page: 'services', color: 'bg-indigo-50 text-indigo-600' },
-  { icon: Shield, title: 'Travel Insurance', desc: 'Comprehensive coverage for peace of mind', page: 'services', color: 'bg-red-50 text-red-600' },
-  { icon: Stamp, title: 'Attestation Services', desc: 'Document attestation for all purposes', page: 'services', color: 'bg-yellow-50 text-yellow-600' },
-  { icon: Car, title: 'Transport & Transfers', desc: 'Airport pickups, city transfers & car rentals', page: 'services', color: 'bg-purple-50 text-purple-600' },
-  { icon: HomeIcon, title: 'Accommodation', desc: 'Apartments, villas, homestays & more', page: 'services', color: 'bg-pink-50 text-pink-600' },
-  { icon: Users, title: 'Group Bookings', desc: 'Special deals for groups of 10 or more', page: 'services', color: 'bg-emerald-50 text-emerald-600' },
-  { icon: TrendingDown, title: 'Forex Services', desc: 'Competitive currency exchange rates', page: 'services', color: 'bg-sky-50 text-sky-600' },
+  { icon: FileText, title: 'Visa Processing', desc: 'Tourist, business & student visas for 50+ countries', page: 'services#visa-processing', color: 'bg-green-50 text-green-600' },
+  { icon: Globe, title: 'Passport Assistance', desc: 'New applications, renewals & fast-track processing', page: 'services#passport-assistance', color: 'bg-indigo-50 text-indigo-600' },
+  { icon: Shield, title: 'Travel Insurance', desc: 'Comprehensive coverage for peace of mind', page: 'services#travel-insurance', color: 'bg-red-50 text-red-600' },
+  { icon: Stamp, title: 'Attestation Services', desc: 'Document attestation for all purposes', page: 'services#attestation-services', color: 'bg-yellow-50 text-yellow-600' },
+  { icon: Car, title: 'Transport & Transfers', desc: 'Airport pickups, city transfers & car rentals', page: 'services#transport-transfers', color: 'bg-purple-50 text-purple-600' },
+  { icon: HomeIcon, title: 'Accommodation', desc: 'Apartments, villas, homestays & more', page: 'services#accommodation-services', color: 'bg-pink-50 text-pink-600' },
+  { icon: Users, title: 'Group Bookings', desc: 'Special deals for groups of 10 or more', page: 'services#group-booking', color: 'bg-emerald-50 text-emerald-600' },
+  { icon: TrendingDown, title: 'Forex Services', desc: 'Competitive currency exchange rates', page: 'services#forex-services', color: 'bg-sky-50 text-sky-600' },
 ];
 
 const featuredDestinations = [
