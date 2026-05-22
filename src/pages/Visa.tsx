@@ -222,7 +222,7 @@ export default function Visa({ onNavigate }: VisaProps) {
             ].map((doc) => (
               <a
                 key={doc.country}
-                href={`/static/${doc.file}`}
+                href={`/public/static/${doc.file}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 bg-white rounded-xl p-5 shadow-sm border border-neutral-100 hover:border-secondary-400 hover:shadow-md transition-all group"
