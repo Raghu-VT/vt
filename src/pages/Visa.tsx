@@ -213,10 +213,10 @@ export default function Visa({ onNavigate }: VisaProps) {
               { country: 'Brazil', label: 'Brazil Tourist Visa Checklist', file: 'BRAZIL_TORUIST_VISA_CHECKLIST.pdf' },
               { country: 'Canada', label: 'Canada Checklist', file: 'CANADA_CHECKLIST.pdf' },
               { country: 'Gibraltar', label: 'Gibraltar Tourist Visa Details', file: 'GIBRALTAR_TOURIST_VISA_DETAILS.pdf' },
-              { country: 'New Zealand', label: 'New Zealand Tourist & Visit Visa Checklist', file: 'NEWZELAND_TOURIST_AND VISIT_VISA_CHECKLIST.pdf' },
+              { country: 'New Zealand', label: 'New Zealand Tourist & Visit Visa Checklist', file: 'NEWZELAND_TOURIST_AND_VISIT_VISA_CHECKLIST.pdf' },
               { country: 'Saudi Arabia', label: 'Saudi Arabia Tourist Visa Checklist', file: 'SAUDI_ARABIA_TOURIST_VISA_CHECKLIST.pdf' },
               { country: 'Schengen', label: 'Schengen Tourist Visa Required Documents', file: 'SCHENGEN_TOURIST_VISA_REQUIRED_DOCUMENTS.pdf' },
-              { country: 'Singapore', label: 'Singapore Tourist & Visit Visa Checklist', file: 'SINGAPORE_TOURIST_AND_VISIT VISA_CHECKLIST.pdf' },
+              { country: 'Singapore', label: 'Singapore Tourist & Visit Visa Checklist', file: 'SINGAPORE_TOURIST_AND_VISIT_VISA_CHECKLIST.pdf' },
               { country: 'South Africa', label: 'South Africa Tourist Visa Checklist', file: 'SOUTH_AFRICA_TOURIST_VISA_CHECKLIST.pdf' },
          { country: 'Vietnam', label: 'Vietnam Tourist Visa Checklist', file: 'VIETNAM_TOURIST_VISA_CHECKLIST.pdf' },
             ].map((doc) => (
