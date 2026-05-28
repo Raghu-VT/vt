@@ -41,18 +41,18 @@ export default function About({ onNavigate }: AboutProps) {
       {/* Introduction */}
       <section className="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
-          <span className="text-secondary-500 font-medium text-sm uppercase tracking-wider">About Venkitravel.com</span>
+          <span className="text-secondary-500 font-medium text-sm uppercase tracking-wider">About Venkitravel</span>
           <h2 className="font-heading text-3xl md:text-4xl font-700 text-primary-900 mt-2 mb-4">
-            Welcome to Venkitravel.com
+            Welcome to Venkitravel
           </h2>
           <p className="text-neutral-600 leading-relaxed mb-4">
-            Welcome to <strong>Venkitravel.com</strong>, your trusted partner in travel for over 25 years. With a legacy of delivering exceptional travel experiences, we are proud to stand as a comprehensive travel solutions provider that caters to every traveler's dream.
+            Welcome to <strong>Venkitravel</strong>, your trusted partner in travel for over 25 years. With a legacy of delivering exceptional travel experiences, we are proud to stand as a comprehensive travel solutions provider that caters to every traveler's dream.
           </p>
           <p className="text-neutral-600 leading-relaxed mb-4">
-            Established in 2004 with a vision to redefine travel services, Venkitravel.com has grown to become a trusted leader in the travel industry, serving countless happy customers across the globe.
+            Established in 2004 with a vision to redefine travel services, Venkitravel has grown to become a trusted leader in the travel industry, serving countless happy customers across the globe.
           </p>
           <p className="text-neutral-600 leading-relaxed mb-6">
-            Whether you're planning a family vacation, a romantic getaway, or a business trip, Venkitravel.com ensures seamless, stress-free, and unforgettable journeys.
+            Whether you're planning a family vacation, a romantic getaway, or a business trip, Venkitravel ensures seamless, stress-free, and unforgettable journeys.
           </p>
           <div className="flex flex-wrap gap-4">
             <div className="flex items-center gap-2 text-sm text-neutral-700">
@@ -127,19 +127,19 @@ export default function About({ onNavigate }: AboutProps) {
               <p className="text-secondary-300 text-sm uppercase tracking-wider mb-2">Founder & CEO</p>
               <h2 className="font-heading text-3xl font-700 mb-4">Raghu Babu</h2>
               <p className="text-neutral-200 leading-relaxed mb-4">
-                At the heart of Venkitravel.com is our founder and CEO, Mr. Babu, a seasoned leader with over 25 years of experience in the travel industry. Born in a small town in Andhra Pradesh, Mr. Babu’s passion for exploring new places and creating memorable travel experiences has been the driving force behind his career. A graduate of Nagarjuna University, his journey began with an esteemed travel organization, where he gained valuable insights into the industry and nurtured a vision to make travel seamless and accessible for everyone.
+                At the heart of Venkitravel is our founder and CEO, Mr. Babu, a seasoned leader with over 25 years of experience in the travel industry. Born in a small town in Andhra Pradesh, Mr. Babu’s passion for exploring new places and creating memorable travel experiences has been the driving force behind his career. A graduate of Nagarjuna University, his journey began with an esteemed travel organization, where he gained valuable insights into the industry and nurtured a vision to make travel seamless and accessible for everyone.
               </p>
               <p className="text-neutral-200 leading-relaxed mb-4">
-                In 2004, Mr. Babu turned his vision into reality by founding Venkitravel.com. Starting with air ticket booking, he gradually expanded the company’s offerings to include a wide range of travel services such as Forex Services, Hotel Booking, Cruise Booking, Tour Packages, Visa Processing, Passport Assistance, Travel Insurance, Transport and Transfers, and Accommodation Services. Today, Venkitravel.com is a trusted name in the travel industry, recognized for its customer-first approach and exceptional service quality.
+                In 2004, Mr. Babu turned his vision into reality by founding Venkitravel. Starting with air ticket booking, he gradually expanded the company’s offerings to include a wide range of travel services such as Forex Services, Hotel Booking, Cruise Booking, Tour Packages, Visa Processing, Passport Assistance, Travel Insurance, Transport and Transfers, and Accommodation Services. Today, Venkitravel is a trusted name in the travel industry, recognized for its customer-first approach and exceptional service quality.
               </p>
               <p className="text-neutral-200 leading-relaxed mb-4">
-                Mr. Babu’s leadership has been pivotal in navigating challenges and driving innovation. By embracing digital transformation, forming strategic global partnerships, and fostering a customer-centric culture, he has steered Venkitravel.com toward remarkable growth. The recent expansion into South Africa marks a significant milestone, reflecting the company’s commitment to delivering world-class travel services on a global scale.
+                Mr. Babu’s leadership has been pivotal in navigating challenges and driving innovation. By embracing digital transformation, forming strategic global partnerships, and fostering a customer-centric culture, he has steered Venkitravel toward remarkable growth. The recent expansion into South Africa marks a significant milestone, reflecting the company’s commitment to delivering world-class travel services on a global scale.
               </p>
               <p className="text-neutral-200 leading-relaxed mb-4">
-                Under his guidance, Venkitravel.com operates on a foundation of values: trust, integrity, innovation, and excellence. Mr. Babu is equally committed to sustainability, ethical travel practices, and giving back to the community through impactful CSR initiatives. These principles not only define the company’s operations but also resonate with its customers, many of whom choose Venkitravel.com based on trust and strong referrals.
+                Under his guidance, Venkitravel operates on a foundation of values: trust, integrity, innovation, and excellence. Mr. Babu is equally committed to sustainability, ethical travel practices, and giving back to the community through impactful CSR initiatives. These principles not only define the company’s operations but also resonate with its customers, many of whom choose Venkitravel based on trust and strong referrals.
               </p>
               <p className="text-neutral-200 leading-relaxed">
-                At Venkitravel.com, we are proud to be guided by Mr. Babu’s vision and unwavering dedication to redefining travel for a global audience.
+                At Venkitravel, we are proud to be guided by Mr. Babu’s vision and unwavering dedication to redefining travel for a global audience.
               </p>
             </div>
           </div>
@@ -150,7 +150,7 @@ export default function About({ onNavigate }: AboutProps) {
       <section className="bg-neutral-50 py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-700 text-primary-900">Why Choose Venkitravel.com?</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-700 text-primary-900">Why Choose Venkitravel?</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyUs.map((item) => (
@@ -188,7 +188,7 @@ export default function About({ onNavigate }: AboutProps) {
       <section className="py-16 px-4 text-center bg-primary-900 text-white">
         <h2 className="font-heading text-3xl font-700 mb-3">Experience the Venkitravel Difference</h2>
         <p className="text-neutral-200 mb-8 max-w-2xl mx-auto">
-          Whether booking last-minute deals, finding group travel discounts, or personalizing your dream vacation — Venkitravel.com is here to make it happen.
+          Whether booking last-minute deals, finding group travel discounts, or personalizing your dream vacation — Venkitravel is here to make it happen.
         </p>
         <button onClick={() => onNavigate('contact')} className="bg-secondary-500 hover:bg-secondary-600 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
           Get in Touch
