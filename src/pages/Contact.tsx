@@ -97,7 +97,7 @@ export default function Contact({ onNavigate: _onNavigate }: ContactProps) {
       {/* Quick contact bar */}
       <div className="bg-primary-900 text-white py-4 px-4">
         <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-8">
-          <a href="tel:+914023411234" className="flex items-center gap-2 text-sm hover:text-secondary-300 transition-colors">
+          <a href="tel:+91-92480-70008" className="flex items-center gap-2 text-sm hover:text-secondary-300 transition-colors">
             <Phone size={14} className="text-secondary-400" /> +91-40-2341 1234
           </a>
           <a href="mailto:info@venkitravel.com" className="flex items-center gap-2 text-sm hover:text-secondary-300 transition-colors">
