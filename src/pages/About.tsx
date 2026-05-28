@@ -39,10 +39,10 @@ export default function About({ onNavigate }: AboutProps) {
       </section>
 
       {/* Introduction */}
-      <section className="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="max-w-7xl mx-auto px-4 py-10 sm:py-16 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
         <div>
-          <span className="text-secondary-500 font-medium text-sm uppercase tracking-wider">About Venkitravel</span>
-          <h2 className="font-heading text-3xl md:text-4xl font-700 text-primary-900 mt-2 mb-4">
+          <span className="text-secondary-500 font-medium text-xs sm:text-sm uppercase tracking-wider">About Venkitravel</span>
+          <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-700 text-primary-900 mt-2 mb-4">
             Welcome to Venkitravel
           </h2>
           <p className="text-neutral-600 leading-relaxed mb-4">
@@ -66,27 +66,18 @@ export default function About({ onNavigate }: AboutProps) {
             </div>
           </div>
         </div>
-        <div className="relative">
+        <div className="relative flex items-center">
           <img
             src="https://images.pexels.com/photos/2097616/pexels-photo-2097616.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="About Venkitravel"
-            className="rounded-2xl shadow-xl w-full"
+            className="rounded-2xl shadow-xl w-full max-h-[340px] object-cover"
           />
-          <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-lg p-5 flex items-center gap-4">
-            <div className="w-14 h-14 bg-primary-900 rounded-full flex items-center justify-center">
-              <Award size={24} className="text-secondary-400" />
-            </div>
-            <div>
-              <div className="font-heading font-700 text-primary-900 text-lg">ISO Certified</div>
-              <div className="text-neutral-500 text-xs">9001:2015 Quality Management</div>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* Mission & Vision */}
-      <section className="bg-neutral-50 py-16 px-4">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <section className="bg-neutral-50 py-10 sm:py-16 px-4">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           <div className="bg-white rounded-2xl p-8 shadow-sm">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center">
@@ -113,19 +104,19 @@ export default function About({ onNavigate }: AboutProps) {
       </section>
 
       {/* Founder Profile */}
-      <section className="py-16 px-4 max-w-7xl mx-auto">
+      <section className="py-10 sm:py-16 px-4 max-w-7xl mx-auto">
         <div className="bg-gradient-to-r from-primary-900 to-secondary-700 rounded-3xl overflow-hidden text-white">
           <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="relative">
+            <div className="relative max-h-[280px] md:max-h-none">
               <img
                 src="/Founder_Image.png"
                 alt="Raghu Babu"
-                className="w-full h-full object-cover object-top min-h-[400px]"
+                className="w-full h-full object-cover object-top min-h-[280px] md:min-h-[400px]"
               />
             </div>
-            <div className="p-8 md:p-12 flex flex-col justify-center">
-              <p className="text-secondary-300 text-sm uppercase tracking-wider mb-2">Founder & CEO</p>
-              <h2 className="font-heading text-3xl font-700 mb-4">Raghu Babu</h2>
+            <div className="p-6 sm:p-8 md:p-12 flex flex-col justify-center">
+              <p className="text-secondary-300 text-xs sm:text-sm uppercase tracking-wider mb-2">Founder & CEO</p>
+              <h2 className="font-heading text-2xl sm:text-3xl font-700 mb-3 sm:mb-4">Raghu Babu</h2>
               <p className="text-neutral-200 leading-relaxed mb-4">
                 At the heart of Venkitravel is our founder and CEO, Mr. Babu, a seasoned leader with over 25 years of experience in the travel industry. Born in a small town in Andhra Pradesh, Mr. Babu’s passion for exploring new places and creating memorable travel experiences has been the driving force behind his career. A graduate of Nagarjuna University, his journey began with an esteemed travel organization, where he gained valuable insights into the industry and nurtured a vision to make travel seamless and accessible for everyone.
               </p>
@@ -147,10 +138,10 @@ export default function About({ onNavigate }: AboutProps) {
       </section>
 
       {/* Why Choose Us */}
-      <section className="bg-neutral-50 py-16 px-4">
+      <section className="bg-neutral-50 py-10 sm:py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-700 text-primary-900">Why Choose Venkitravel?</h2>
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-700 text-primary-900">Why Choose Venkitravel?</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyUs.map((item) => (
@@ -168,10 +159,10 @@ export default function About({ onNavigate }: AboutProps) {
 
      
       {/* Our Clients */}
-      <section className="bg-neutral-50 py-16 px-4">
+      <section className="bg-neutral-50 py-10 sm:py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-heading font-700 text-primary-900">Our Valued Clients</h2>
+          <div className="text-center mb-8 sm:mb-10">
+            <h2 className="text-2xl sm:text-3xl font-heading font-700 text-primary-900">Our Valued Clients</h2>
             <p className="text-neutral-500 mt-2">Trusted by leading organizations across industries</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
@@ -185,8 +176,8 @@ export default function About({ onNavigate }: AboutProps) {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 text-center bg-primary-900 text-white">
-        <h2 className="font-heading text-3xl font-700 mb-3">Experience the Venkitravel Difference</h2>
+      <section className="py-10 sm:py-16 px-4 text-center bg-primary-900 text-white">
+        <h2 className="font-heading text-2xl sm:text-3xl font-700 mb-3">Experience the Venkitravel Difference</h2>
         <p className="text-neutral-200 mb-8 max-w-2xl mx-auto">
           Whether booking last-minute deals, finding group travel discounts, or personalizing your dream vacation — Venkitravel is here to make it happen.
         </p>

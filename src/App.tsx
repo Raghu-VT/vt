@@ -28,14 +28,23 @@ const isAdminRoute = () =>
 export default function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
   const [pendingSection, setPendingSection] = useState<string | null>(null);
+  const [activeFilter, setActiveFilter] = useState<string>('');
   const [isAdmin] = useState(isAdminRoute);
 
   const navigate = (page: string) => {
     const [basePage, section] = page.split('#');
     setCurrentPage(basePage as Page);
     if (section) {
-      setPendingSection(section);
+      if (basePage === 'packages') {
+        setActiveFilter(section);
+        setPendingSection(null);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        setActiveFilter('');
+        setPendingSection(section);
+      }
     } else {
+      setActiveFilter('');
       setPendingSection(null);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -64,7 +73,7 @@ export default function App() {
       case 'packages-international':
       case 'packages-custom':
       case 'packages-seasonal':
-        return <Packages onNavigate={navigate} />;
+        return <Packages onNavigate={navigate} initialCategory={activeFilter} />;
       case 'services':
         return <Services onNavigate={navigate} />;
       case 'visa':

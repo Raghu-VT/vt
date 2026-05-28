@@ -140,7 +140,7 @@ export default function Deals({ onNavigate }: DealsProps) {
 
       <div className="max-w-7xl mx-auto px-4 py-16 space-y-20">
         {/* Last Minute */}
-        <section>
+        <section id="last-minute" className="scroll-mt-24">
           <div className="flex items-center gap-3 mb-8">
             <div className="bg-error-100 p-2 rounded-xl">
               <Zap size={22} className="text-error-600" />
@@ -184,7 +184,7 @@ export default function Deals({ onNavigate }: DealsProps) {
         </section>
 
         {/* Early Bird */}
-        <section>
+        <section id="early-bird" className="scroll-mt-24">
           <div className="flex items-center gap-3 mb-8">
             <div className="bg-accent-100 p-2 rounded-xl">
               <TrendingDown size={22} className="text-accent-600" />
@@ -226,7 +226,7 @@ export default function Deals({ onNavigate }: DealsProps) {
         </section>
 
         {/* Group Discounts */}
-        <section>
+        <section id="group-discounts" className="scroll-mt-24">
           <div className="flex items-center gap-3 mb-8">
             <div className="bg-secondary-100 p-2 rounded-xl">
               <Users size={22} className="text-secondary-600" />
@@ -267,7 +267,7 @@ export default function Deals({ onNavigate }: DealsProps) {
         </section>
 
         {/* Featured Destinations */}
-        <section>
+        <section id="featured-destinations" className="scroll-mt-24">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-heading font-700 text-primary-900">Featured Destinations</h2>
             <p className="text-neutral-500 mt-2">Handpicked destinations with exclusive pricing</p>

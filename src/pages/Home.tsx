@@ -161,7 +161,7 @@ export default function Home({ onNavigate }: HomeProps) {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-[90vh] min-h-[560px] overflow-hidden">
+      <section className="relative h-[60vh] min-h-[380px] overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={hero.image}
@@ -173,13 +173,13 @@ export default function Home({ onNavigate }: HomeProps) {
 
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4 text-center">
           <div className="animate-fade-in">
-            <p className="text-secondary-300 text-sm font-medium tracking-widest uppercase mb-3">
+            <p className="text-secondary-300 text-xs sm:text-sm font-medium tracking-widest uppercase mb-2 sm:mb-3">
               ISO 9001:2015 Certified · IATA Accredited · 22+ Years of Trust
             </p>
-            <h1 className="font-heading text-4xl md:text-6xl font-700 mb-4 leading-tight drop-shadow-lg">
+            <h1 className="font-heading text-2xl sm:text-4xl md:text-6xl font-700 mb-3 sm:mb-4 leading-tight drop-shadow-lg">
               {hero.title}
             </h1>
-            <p className="text-neutral-200 text-lg md:text-xl max-w-2xl mx-auto mb-8">
+            <p className="text-neutral-200 text-sm sm:text-lg md:text-xl max-w-2xl mx-auto mb-4 sm:mb-8">
               {hero.subtitle}
             </p>
           </div>
@@ -211,13 +211,13 @@ export default function Home({ onNavigate }: HomeProps) {
       {/* Flight Search Bar */}
       
       {/* Stats */}
-      <section className="bg-primary-900 py-12 mt-8">
+      <section className="bg-primary-900 py-8 sm:py-12 mt-4 sm:mt-8">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {stats.map((s) => (
               <div key={s.label} className="text-center">
-                <div className="text-3xl md:text-4xl font-heading font-700 text-secondary-400 mb-1">{s.value}</div>
-                <div className="text-neutral-300 text-sm">{s.label}</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-heading font-700 text-secondary-400 mb-1">{s.value}</div>
+                <div className="text-neutral-300 text-xs sm:text-sm">{s.label}</div>
               </div>
             ))}
           </div>
@@ -225,11 +225,11 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       {/* Services */}
-      <section className="py-20 px-4 bg-neutral-50">
+      <section className="py-12 sm:py-20 px-4 bg-neutral-50">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-700 text-primary-900">Our Services</h2>
-            <p className="text-neutral-500 mt-3 text-lg max-w-2xl mx-auto">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-700 text-primary-900">Our Services</h2>
+            <p className="text-neutral-500 mt-2 sm:mt-3 text-sm sm:text-lg max-w-2xl mx-auto">
               Comprehensive travel solutions tailored to every need — all under one roof.
             </p>
           </div>
@@ -238,13 +238,14 @@ export default function Home({ onNavigate }: HomeProps) {
               <button
                 key={s.title}
                 onClick={() => onNavigate(s.page)}
-                className="card p-5 text-left hover:-translate-y-1 transition-transform duration-200 group"
+                className="card p-3 sm:p-5 text-left hover:-translate-y-1 transition-transform duration-200 group"
               >
-                <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-3 ${s.color}`}>
-                  <s.icon size={22} />
+                <div className={`w-9 h-9 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center mb-2 sm:mb-3 ${s.color}`}>
+                  <s.icon size={18} className="sm:hidden" />
+                  <s.icon size={22} className="hidden sm:block" />
                 </div>
-                <h3 className="font-heading font-600 text-sm text-neutral-800 mb-1 group-hover:text-primary-900 transition-colors">{s.title}</h3>
-                <p className="text-xs text-neutral-500 leading-relaxed">{s.desc}</p>
+                <h3 className="font-heading font-600 text-xs sm:text-sm text-neutral-800 mb-1 group-hover:text-primary-900 transition-colors">{s.title}</h3>
+                <p className="text-[10px] sm:text-xs text-neutral-500 leading-relaxed hidden sm:block">{s.desc}</p>
               </button>
             ))}
           </div>
@@ -252,9 +253,9 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       {/* Featured Destinations */}
-      <section className="py-20 px-4">
+      <section className="py-12 sm:py-20 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-end justify-between mb-12">
+          <div className="flex items-end justify-between mb-8 sm:mb-12">
             <div>
               <h2 className="text-3xl md:text-4xl font-heading font-700 text-primary-900">Featured Destinations</h2>
               <p className="text-neutral-500 mt-2">Handpicked destinations for unforgettable experiences</p>
@@ -267,7 +268,7 @@ export default function Home({ onNavigate }: HomeProps) {
             {featuredDestinations.map((dest) => (
               <div
                 key={dest.name}
-                className="relative overflow-hidden rounded-2xl group cursor-pointer h-72"
+                className="relative overflow-hidden rounded-2xl group cursor-pointer h-52 sm:h-72"
                 onClick={() => onNavigate('packages')}
               >
                 <img
@@ -295,7 +296,7 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       {/* Travel Deals */}
-      <section className="py-20 px-4 bg-neutral-50">
+      <section className="py-12 sm:py-20 px-4 bg-neutral-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-700 text-primary-900">Latest Travel Deals</h2>
@@ -334,7 +335,7 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 px-4 bg-primary-900 text-white">
+      <section className="py-12 sm:py-20 px-4 bg-primary-900 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-700 text-white">Why Choose Venkitravel?</h2>
@@ -362,7 +363,7 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 px-4">
+      <section className="py-12 sm:py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-700 text-primary-900">What Our Travellers Say</h2>
@@ -389,7 +390,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
       {/* CTA Banner */}
       <section
-        className="relative py-20 px-4 overflow-hidden"
+        className="relative py-12 sm:py-20 px-4 overflow-hidden"
         style={{
           background: 'linear-gradient(135deg, #1B2A6B 0%, #00AEEF 100%)',
         }}

@@ -3,9 +3,17 @@ import { Clock, Users, Star, ArrowRight, Filter } from 'lucide-react';
 
 interface PackagesProps {
   onNavigate: (page: string) => void;
+  initialCategory?: string;
 }
 
 const categories = ['All', 'Domestic', 'International', 'Honeymoon', 'Adventure', 'Pilgrimage', 'Customized'];
+
+const categoryMap: Record<string, string> = {
+  'packages-domestic': 'Domestic',
+  'packages-international': 'International',
+  'packages-custom': 'Customized',
+  'packages-seasonal': 'All',
+};
 
 const packages = [
   {
@@ -109,8 +117,11 @@ const packages = [
   },
 ];
 
-export default function Packages({ onNavigate }: PackagesProps) {
-  const [activeCategory, setActiveCategory] = useState('All');
+export default function Packages({ onNavigate, initialCategory }: PackagesProps) {
+  const [activeCategory, setActiveCategory] = useState(() => {
+    if (initialCategory && categories.includes(initialCategory)) return initialCategory;
+    return 'All';
+  });
 
   const filtered = activeCategory === 'All'
     ? packages

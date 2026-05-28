@@ -24,7 +24,7 @@ Deno.serve(async (req: Request) => {
     const supabaseUrl = Deno.env.get("SUPABASE_URL");
     const serviceRoleKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
 
-    // Save to database
+    // Save inquiry to database
     const dbRes = await fetch(`${supabaseUrl}/rest/v1/contact_inquiries`, {
       method: "POST",
       headers: {
@@ -41,11 +41,47 @@ Deno.serve(async (req: Request) => {
       console.error("DB insert failed:", errText);
     }
 
-    // Send email via Supabase built-in email (mailto link approach)
-    // Since we don't have an SMTP service, we log the inquiry and the
-    // contact form data is stored in the database for the admin to review.
-    // The admin dashboard can display these inquiries.
-    console.log(`New contact inquiry from ${name} (${email}): ${subject}`);
+    // Send email notification to info@venkitravel.com via mailchannels
+    // This uses the MailChannels API available on Supabase edge functions
+    const emailPayload = {
+      personalizations: [
+        {
+          to: [{ email: "info@venkitravel.com", name: "Venki Travel" }],
+        },
+      ],
+      from: { email: "noreply@venkitravel.com", name: "Venki Travel Website" },
+      subject: `New Contact Inquiry: ${subject}`,
+      content: [
+        {
+          type: "text/html",
+          value: `
+            <h2>New Contact Inquiry from Venkitravel.com</h2>
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
+            <p><strong>Subject:</strong> ${subject}</p>
+            <p><strong>Message:</strong></p>
+            <p>${message}</p>
+            <hr/>
+            <p style="color:#999;font-size:12px;">This inquiry was submitted via the Venkitravel.com contact form.</p>
+          `,
+        },
+      ],
+    };
+
+    try {
+      const emailRes = await fetch("https://api.mailchannels.net/tx/v1/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(emailPayload),
+      });
+      if (!emailRes.ok) {
+        const emailErr = await emailRes.text();
+        console.error("Email send failed:", emailErr);
+      }
+    } catch (emailError) {
+      console.error("Email service error:", emailError);
+    }
 
     return new Response(
       JSON.stringify({ success: true, message: "Inquiry submitted successfully" }),

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, Phone, Home } from 'lucide-react';
+import { Menu, X, ChevronDown, Home } from 'lucide-react';
 
 type Page = string;
 
@@ -13,10 +13,10 @@ const navItems = [
     label: 'Tour Packages',
     page: 'packages',
     children: [
-      { label: 'Domestic Packages', page: 'packages-domestic' },
-      { label: 'International Packages', page: 'packages-international' },
-      { label: 'Customized Packages', page: 'packages-custom' },
-      { label: 'Seasonal Packages', page: 'packages-seasonal' },
+      { label: 'Domestic Packages', page: 'packages#Domestic' },
+      { label: 'International Packages', page: 'packages#International' },
+      { label: 'Customized Packages', page: 'packages#Customized' },
+      { label: 'Seasonal Packages', page: 'packages' },
     ],
   },
   {
@@ -38,10 +38,10 @@ const navItems = [
     label: 'Travel Deals',
     page: 'deals',
     children: [
-      { label: 'Last-Minute Offers', page: 'deals' },
-      { label: 'Early Bird Discounts', page: 'deals' },
-      { label: 'Group Discounts', page: 'deals' },
-      { label: 'Featured Destinations', page: 'deals' },
+      { label: 'Last-Minute Offers', page: 'deals#last-minute' },
+      { label: 'Early Bird Discounts', page: 'deals#early-bird' },
+      { label: 'Group Discounts', page: 'deals#group-discounts' },
+      { label: 'Featured Destinations', page: 'deals#featured-destinations' },
     ],
   },
   { label: 'Events', page: 'events' },
@@ -77,22 +77,6 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
 
   return (
     <>
-      {/* Top bar */}
-      <div className="bg-neutral-50 text-neutral-700 text-xs py-2 px-4 border-b border-neutral-200">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <span>Your Journey, Our Expertise. | ISO 9001:2015 Certified | IATA Accredited</span>
-          <div className="flex items-center gap-4">
-            <a href="tel:+919248070008" className="flex items-center gap-1 hover:text-primary-900 transition-colors">
-              <Phone size={12} />
-              <span>+91-92480-70008</span>
-            </a>
-            <a href="" className="hover:text-primary-900 transition-colors" style={{textDecoration:'none', pointerEvents:'none',cursor:'default'}}> 
-              info@venkitravel.com
-            </a>
-          </div>
-        </div>
-      </div>
-
       {/* Main navbar */}
       <nav
         className={`sticky top-0 z-50 transition-all duration-300 ${
@@ -100,10 +84,10 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 py-2">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-14">
             {/* Logo */}
             <button onClick={() => handleNav('home')} className="flex items-center gap-2 flex-shrink-0">
-              <img src="/VT_Logo.png" alt="Venki Travel" className="h-12 w-auto" />
+              <img src="/VT_Logo.png" alt="Venki Travel" className="h-10 w-auto" />
             </button>
 
             {/* Desktop nav */}
@@ -158,7 +142,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
             {/* CTA + Mobile toggle */}
             <div className="flex items-center gap-3">
               <button onClick={() => handleNav('home')} className="flex items-center gap-2 flex-shrink-0">
-                <img src="/image.png" alt="Venki Travel" className="h-12 w-auto" />
+                <img src="/image.png" alt="Venki Travel" className="h-10 w-auto" />
               </button>
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}
