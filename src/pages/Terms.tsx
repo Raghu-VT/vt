@@ -87,7 +87,7 @@ export default function Terms({ onNavigate: _onNavigate }: PolicyProps) {
             <p>For queries regarding these terms, contact us at:</p>
             <div className="mt-3 bg-neutral-50 rounded-xl p-4">
               <p><strong>Venkitravel.com</strong></p>
-              <p>Email: legal@venkitravel.com | Phone: +91-40-2341 1234</p>
+              <p>Email: info@venkitravel.com | Phone: +91-92480-70008</p>
             </div>
           </section>
         </div>
