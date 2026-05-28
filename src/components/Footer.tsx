@@ -146,6 +146,7 @@ E-mail:venkitravelsa@gmail.com, website: www.venkitravel.com
                   { label: 'Terms', page: 'terms' },
                   { label: 'Cancellation', page: 'cancellation' },
                   { label: 'FAQ', page: 'faq' },
+                  { label: 'Sitemap', page: 'sitemap' },
                 ].map((p) => (
                   <button
                     key={p.page}

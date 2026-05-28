@@ -13,13 +13,14 @@ import FAQ from './pages/FAQ';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import Cancellation from './pages/Cancellation';
+import Sitemap from './pages/Sitemap';
 import AdminApp from './pages/admin/AdminApp';
 
 type Page =
   | 'home' | 'packages' | 'packages-domestic' | 'packages-international'
   | 'packages-custom' | 'packages-seasonal' | 'services' | 'visa'
   | 'deals' | 'events' | 'about' | 'contact' | 'faq'
-  | 'privacy' | 'terms' | 'cancellation';
+  | 'privacy' | 'terms' | 'cancellation' | 'sitemap';
 
 const isAdminRoute = () =>
   window.location.pathname.startsWith('/admin') ||
@@ -94,6 +95,8 @@ export default function App() {
         return <Terms onNavigate={navigate} />;
       case 'cancellation':
         return <Cancellation onNavigate={navigate} />;
+      case 'sitemap':
+        return <Sitemap onNavigate={navigate} />;
       case 'home':
       default:
         return <Home onNavigate={navigate} />;
