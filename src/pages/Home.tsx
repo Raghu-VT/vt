@@ -115,8 +115,8 @@ const testimonials = [
 ];
 
 const stats = [
-  { value: '25+', label: 'Years Experience' },
-  { value: '50,000+', label: 'Happy Travellers' },
+  { value: '22+', label: 'Years Experience' },
+  { value: '25,000+', label: 'Happy Travellers' },
   { value: '50+', label: 'Countries Covered' },
   { value: '24/7', label: 'Customer Support' },
 ];
@@ -174,7 +174,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4 text-center">
           <div className="animate-fade-in">
             <p className="text-secondary-300 text-sm font-medium tracking-widest uppercase mb-3">
-              ISO 9001:2015 Certified · IATA Accredited · 25+ Years of Trust
+              ISO 9001:2015 Certified · IATA Accredited · 22+ Years of Trust
             </p>
             <h1 className="font-heading text-4xl md:text-6xl font-700 mb-4 leading-tight drop-shadow-lg">
               {hero.title}
