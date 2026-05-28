@@ -29,7 +29,7 @@ export default function About({ onNavigate }: AboutProps) {
         <img
           src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1600"
           alt="About Us"
-          className="w-full h-full object-cover"
+          className="w-full h-300 object-cover"
         />
         <div className="absolute inset-0 bg-primary-950/65" />
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-white text-center px-4">
