@@ -118,9 +118,9 @@ export default function Cancellation({ onNavigate: _onNavigate }: PolicyProps) {
           <section>
             <h2 className="font-heading font-700 text-primary-900 text-xl mb-3">Contact for Cancellations</h2>
             <div className="bg-neutral-50 rounded-xl p-4">
-              <p><strong>Email:</strong> cancellations@venkitravel.com</p>
-              <p><strong>Phone:</strong> +91-40-2341 1234 (Mon–Sat, 9 AM – 7 PM)</p>
-              <p><strong>Address:</strong> Dwarakapuri Colony, Punjagutta, Hyderabad - 500082</p>
+              <p><strong>Email:</strong> info@venkitravel.com</p>
+              <p><strong>Phone:</strong> +91-92480-70008 (Mon–Sat, 9 AM – 7 PM)</p>
+              <p><strong>Address:</strong> 8-2-293/82/A/22/A, G-3, Road No.5, Jubilee Hills, Pillar No. 1572 Hyderabad - 500033, Telangana, India</p>
             </div>
           </section>
         </div>
