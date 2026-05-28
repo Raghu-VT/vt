@@ -87,8 +87,8 @@ export default function Privacy({ onNavigate: _onNavigate }: PolicyProps) {
             <p>For privacy-related queries or to exercise your rights, please contact us at:</p>
             <div className="mt-3 bg-neutral-50 rounded-xl p-4">
               <p><strong>Venkitravel.com</strong></p>
-              <p>Dwarakapuri Colony, Punjagutta, Hyderabad - 500082</p>
-              <p>Email: privacy@venkitravel.com</p>
+              <p>8-2-293/82/A/22/A, G-3, Road No.5, Jubilee Hills, Pillar No. 1572 Hyderabad - 500033, Telangana, India</p>
+              <p>Email: info@venkitravel.com</p>
               <p>Phone: +91-40-2341 1234</p>
             </div>
           </section>
