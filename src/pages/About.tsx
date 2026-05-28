@@ -46,7 +46,7 @@ export default function About({ onNavigate }: AboutProps) {
             Welcome to Venkitravel
           </h2>
           <p className="text-neutral-600 leading-relaxed mb-4">
-            Welcome to <strong>Venkitravel</strong>, your trusted partner in travel for over 25 years. With a legacy of delivering exceptional travel experiences, we are proud to stand as a comprehensive travel solutions provider that caters to every traveler's dream.
+            Welcome to <strong>Venkitravel</strong>, your trusted partner in travel for over 22 years. With a legacy of delivering exceptional travel experiences, we are proud to stand as a comprehensive travel solutions provider that caters to every traveler's dream.
           </p>
           <p className="text-neutral-600 leading-relaxed mb-4">
             Established in 2004 with a vision to redefine travel services, Venkitravel has grown to become a trusted leader in the travel industry, serving countless happy customers across the globe.
