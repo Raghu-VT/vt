@@ -203,7 +203,7 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       {/* Info Bar */}
-      <section className="bg-primary-900 py-3 sm:py-4">
+      <section className="py-3 sm:py-4">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-white text-xs sm:text-sm text-center">
             <span className="font-medium">Your Journey, Our Expertise.</span>
