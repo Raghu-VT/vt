@@ -14,11 +14,47 @@ const whyUs = [
 ];
 
 
-const clientNames = [
-  'Reskom', 'Kireeti Soft Technologies', 'Ananth Technologies', 'HuSys',
-  'Andeui', 'Bitsilica', 'Evgateway', 'Kalyan Digitals',
-  'Vignan Institute', 'Sparsh', 'TMSR Infra', 'Silver Oaks',
-  'Leadspace', 'eSoft Consulting', 'Kennedy High School', 'Medwrite',
+const clientLogos = [
+  { file: 'Reskom.png', name: 'Reskom' },
+  { file: 'Kireeti.png', name: 'Kireeti Soft Technologies' },
+  { file: 'Ananth_Technologies.png', name: 'Ananth Technologies' },
+  { file: 'Husys.png', name: 'HuSys' },
+  { file: 'Andeui.png', name: 'Andeui' },
+  { file: 'Bitsilica.png', name: 'Bitsilica' },
+  { file: 'EV_Gateway.png', name: 'EV Gateway' },
+  { file: 'Kalyan_Digitals.png', name: 'Kalyan Digitals' },
+  { file: 'Vignan.png', name: 'Vignan Institute' },
+  { file: 'Sparsh.png', name: 'Sparsh' },
+  { file: 'TMSR.png', name: 'TMSR Infra' },
+  { file: 'SiverOaks.png', name: 'Silver Oaks' },
+  { file: 'Leadspace.png', name: 'Leadspace' },
+  { file: 'eSoft.png', name: 'eSoft Consulting' },
+  { file: 'Kenedy.png', name: 'Kennedy High School' },
+  { file: 'Medwrite.png', name: 'Medwrite' },
+  { file: 'Center_for_Social_Service.png', name: 'Center for Social Service' },
+  { file: 'Crux.png', name: 'Crux' },
+  { file: 'Dasari.png', name: 'Dasari' },
+  { file: 'Dwelton.png', name: 'Dwelton' },
+  { file: 'Elegans.png', name: 'Elegans' },
+  { file: 'elementz.png', name: 'Elementz' },
+  { file: 'Future_Access.png', name: 'Future Access' },
+  { file: 'GI.png', name: 'GI' },
+  { file: 'GOI.png', name: 'GOI' },
+  { file: 'Kakatiya.png', name: 'Kakatiya' },
+  { file: 'Mspace.png', name: 'Mspace' },
+  { file: 'Nexgen.png', name: 'Nexgen' },
+  { file: 'NRI.png', name: 'NRI' },
+  { file: 'OCIMUM.png', name: 'Ocimum' },
+  { file: 'SCHRILL.png', name: 'Schrill' },
+  { file: 'SMS.png', name: 'SMS' },
+  { file: 'Sowjanya.png', name: 'Sowjanya' },
+  { file: 'Sri_Avanthica.png', name: 'Sri Avanthica' },
+  { file: 'Subhagurha.png', name: 'Subhagurha' },
+  { file: 'TecBulls.png', name: 'TecBulls' },
+  { file: 'Uni.png', name: 'Uni' },
+  { file: 'Vidgas.png', name: 'Vidgas' },
+  { file: 'ABN1.png', name: 'ABN' },
+  { file: 'imp.png', name: 'IMP' },
 ];
 
 export default function About({ onNavigate }: AboutProps) {
@@ -165,12 +201,22 @@ export default function About({ onNavigate }: AboutProps) {
             <h2 className="text-2xl sm:text-3xl font-heading font-700 text-primary-900">Our Valued Clients</h2>
             <p className="text-neutral-500 mt-2">Trusted by leading organizations across industries</p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {clientNames.map((client) => (
-              <div key={client} className="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow border border-neutral-100">
-                <p className="text-xs font-medium text-neutral-600">{client}</p>
-              </div>
-            ))}
+          <div className="relative overflow-hidden">
+            <div className="flex gap-6 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-neutral-300 scrollbar-track-transparent">
+              {clientLogos.map((client) => (
+                <div
+                  key={client.file}
+                  className="flex-shrink-0 bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow border border-neutral-100 flex items-center justify-center min-w-[140px] h-20"
+                >
+                  <img
+                    src={`/Clients/${client.file}`}
+                    alt={client.name}
+                    className="max-h-12 max-w-[120px] object-contain"
+                    title={client.name}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

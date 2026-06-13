@@ -47,42 +47,36 @@ const featuredDestinations = [
     name: 'Maldives',
     tagline: 'Paradise on Earth',
     image: 'https://images.pexels.com/photos/1483053/pexels-photo-1483053.jpeg?auto=compress&cs=tinysrgb&w=600',
-    price: '₹45,000',
     duration: '5 Nights',
   },
   {
     name: 'Dubai',
     tagline: 'City of Gold',
     image: 'https://images.pexels.com/photos/3310691/pexels-photo-3310691.jpeg?auto=compress&cs=tinysrgb&w=600',
-    price: '₹35,000',
     duration: '4 Nights',
   },
   {
     name: 'Bali',
     tagline: 'Island of Gods',
     image: 'https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=600',
-    price: '₹38,000',
     duration: '6 Nights',
   },
   {
-    name: 'Switzerland',
-    tagline: 'Alps & Charm',
-    image: 'https://images.pexels.com/photos/1166209/pexels-photo-1166209.jpeg?auto=compress&cs=tinysrgb&w=600',
-    price: '₹85,000',
-    duration: '7 Nights',
+    name: 'South Africa',
+    tagline: 'Safari & Scenic Beauty',
+    image: 'https://images.pexels.com/photos/1547951/pexels-photo-1547951.jpeg?auto=compress&cs=tinysrgb&w=600',
+    duration: '8 Nights',
   },
   {
     name: 'Thailand',
     tagline: 'Land of Smiles',
     image: 'https://images.pexels.com/photos/1031659/pexels-photo-1031659.jpeg?auto=compress&cs=tinysrgb&w=600',
-    price: '₹28,000',
     duration: '5 Nights',
   },
   {
     name: 'Kashmir',
     tagline: 'Heaven on Earth',
     image: 'https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=600',
-    price: '₹22,000',
     duration: '5 Nights',
   },
 ];
@@ -280,13 +274,8 @@ export default function Home({ onNavigate }: HomeProps) {
                 <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
                   <h3 className="font-heading font-700 text-xl">{dest.name}</h3>
                   <p className="text-neutral-300 text-sm mb-2">{dest.tagline}</p>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2 text-xs text-neutral-300">
-                      <Clock size={12} /> {dest.duration}
-                    </div>
-                    <div className="bg-secondary-500 text-white text-sm font-600 px-3 py-1 rounded-full">
-                      From {dest.price}
-                    </div>
+                  <div className="flex items-center gap-2 text-xs text-neutral-300">
+                    <Clock size={12} /> {dest.duration}
                   </div>
                 </div>
               </div>
