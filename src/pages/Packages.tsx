@@ -159,7 +159,7 @@ const packages = [
   {
     title: 'Cape Town & Peninsula',
     category: 'South Africa',
-    image: 'https://images.pexels.com/photos/2839722/pexels-photo-2839722.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: 'https://images.pexels.com/photos/13248044/pexels-photo-13248044.jpeg?auto=compress&cs=tinysrgb&w=600',
     duration: '5 Nights / 6 Days',
     groupSize: '2-6',
     rating: 4.8,
@@ -192,7 +192,7 @@ const packages = [
   {
     title: 'Garden Route Journey',
     category: 'South Africa',
-    image: 'https://images.pexels.com/photos/2839722/pexels-photo-2839722.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: 'https://images.pexels.com/photos/7534375/pexels-photo-7534375.jpeg?auto=compress&cs=tinysrgb&w=600',
     duration: '6 Nights / 7 Days',
     groupSize: '2-8',
     rating: 4.8,
@@ -287,7 +287,7 @@ const packages = [
   {
     title: 'Andaman Island Adventure',
     category: 'Adventure',
-    image: 'https://images.pexels.com/photos/1340459/pexels-photo-1340459.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: 'https://images.pexels.com/photos/1287465/pexels-photo-1287465.jpeg?auto=compress&cs=tinysrgb&w=600',
     duration: '6 Nights / 7 Days',
     groupSize: '2-8',
     rating: 4.8,
