@@ -49,35 +49,41 @@ export default function Contact({ onNavigate: _onNavigate }: ContactProps) {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
-
-  const handleSubmit = async (e: React.FormEvent) => {
+const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
     setError('');
     try {
-      const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-      const anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
-      const res = await fetch(`${supabaseUrl}/functions/v1/send-contact-email`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${anonKey}`,
-        },
-        body: JSON.stringify(form),
-      });
-      const data = await res.json();
-      if (!res.ok || data.error) {
-        setError(data.error || 'Something went wrong. Please try again or call us directly.');
-      } else {
-        setSubmitted(true);
-        setForm({ name: '', email: '', phone: '', subject: '', message: '' });
-      }
+      const res = await fetch(
+  "https://www.venkitravel.com/api/send-contact.php",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(form),
+  }
+);
+
+const data = await res.json();
+
+if (!res.ok || data.error) {
+  setError(data.error || "Failed to send message");
+} else {
+  setSubmitted(true);
+  setForm({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+}
     } catch {
       setError('Network error. Please try again or email us at info@venkitravel.com');
     }
     setSubmitting(false);
   };
-
   return (
     <div className="min-h-screen">
       {/* Hero */}
