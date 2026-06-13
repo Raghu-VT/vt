@@ -13,7 +13,7 @@ const heroSlides = [
   {
     image: 'https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=1600',
     title: 'Where Dreams Meet Destinations',
-    subtitle: 'Your trusted travel partner for over 25 years. ISO 9001:2015 Certified.',
+    subtitle: 'Your trusted travel partner for over 22 years. ISO 9001:2015 Certified.',
   },
   {
     image: 'https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg?auto=compress&cs=tinysrgb&w=1600',
