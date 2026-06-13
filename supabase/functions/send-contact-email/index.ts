@@ -21,28 +21,7 @@ Deno.serve(async (req: Request) => {
       );
     }
 
-    const supabaseUrl = Deno.env.get("SUPABASE_URL");
-    const serviceRoleKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
-
-    // Save inquiry to database
-    const dbRes = await fetch(`${supabaseUrl}/rest/v1/contact_inquiries`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        apikey: serviceRoleKey!,
-        Authorization: `Bearer ${serviceRoleKey}`,
-        Prefer: "return=minimal",
-      },
-      body: JSON.stringify({ name, email, phone, subject, message }),
-    });
-
-    if (!dbRes.ok) {
-      const errText = await dbRes.text();
-      console.error("DB insert failed:", errText);
-    }
-
-    // Send email notification to info@venkitravel.com via mailchannels
-    // This uses the MailChannels API available on Supabase edge functions
+    // Send email notification directly to info@venkitravel.com via MailChannels
     const emailPayload = {
       personalizations: [
         {
@@ -69,22 +48,23 @@ Deno.serve(async (req: Request) => {
       ],
     };
 
-    try {
-      const emailRes = await fetch("https://api.mailchannels.net/tx/v1/send", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(emailPayload),
-      });
-      if (!emailRes.ok) {
-        const emailErr = await emailRes.text();
-        console.error("Email send failed:", emailErr);
-      }
-    } catch (emailError) {
-      console.error("Email service error:", emailError);
+    const emailRes = await fetch("https://api.mailchannels.net/tx/v1/send", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(emailPayload),
+    });
+
+    if (!emailRes.ok) {
+      const emailErr = await emailRes.text();
+      console.error("Email send failed:", emailErr);
+      return new Response(
+        JSON.stringify({ error: "Failed to send email. Please try again or call us directly." }),
+        { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
     }
 
     return new Response(
-      JSON.stringify({ success: true, message: "Inquiry submitted successfully" }),
+      JSON.stringify({ success: true, message: "Email sent successfully" }),
       { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
     );
   } catch (err) {

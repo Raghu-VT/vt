@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { Award, Target, Eye, Users, Globe, Shield, Star, CheckCircle } from 'lucide-react';
 
 interface AboutProps {
@@ -58,6 +59,43 @@ const clientLogos = [
 ];
 
 export default function About({ onNavigate }: AboutProps) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
+    if (!scrollContainer) return;
+
+    let scrollAmount = 0;
+    const scrollSpeed = 1;
+    let animationId: number;
+    let isPaused = false;
+
+    const autoScroll = () => {
+      if (!isPaused && scrollContainer) {
+        scrollAmount += scrollSpeed;
+        if (scrollAmount >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+          scrollAmount = 0;
+        }
+        scrollContainer.scrollLeft = scrollAmount;
+      }
+      animationId = requestAnimationFrame(autoScroll);
+    };
+
+    animationId = requestAnimationFrame(autoScroll);
+
+    const handleMouseEnter = () => { isPaused = true; };
+    const handleMouseLeave = () => { isPaused = false; };
+
+    scrollContainer.addEventListener('mouseenter', handleMouseEnter);
+    scrollContainer.addEventListener('mouseleave', handleMouseLeave);
+
+    return () => {
+      cancelAnimationFrame(animationId);
+      scrollContainer.removeEventListener('mouseenter', handleMouseEnter);
+      scrollContainer.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen">
       {/* Hero */}
@@ -202,7 +240,11 @@ export default function About({ onNavigate }: AboutProps) {
             <p className="text-neutral-500 mt-2">Trusted by leading organizations across industries</p>
           </div>
           <div className="relative overflow-hidden">
-            <div className="flex gap-6 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-neutral-300 scrollbar-track-transparent">
+            <div
+              ref={scrollRef}
+              className="flex gap-6 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-neutral-300 scrollbar-track-transparent scroll-smooth"
+              style={{ scrollBehavior: 'smooth' }}
+            >
               {clientLogos.map((client) => (
                 <div
                   key={client.file}

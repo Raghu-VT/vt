@@ -6,7 +6,7 @@ interface PackagesProps {
   initialCategory?: string;
 }
 
-const categories = ['All', 'Domestic', 'International', 'Honeymoon', 'Adventure', 'Pilgrimage', 'Customized'];
+const categories = ['All', 'Domestic', 'International', 'South Africa', 'Honeymoon', 'Adventure', 'Pilgrimage', 'Customized'];
 
 const packages = [
   // Domestic
@@ -111,67 +111,6 @@ const packages = [
     tags: ['Wildlife', 'Nature', 'Adventure'],
     highlights: ['Sydney Opera House', 'Great Barrier Reef', 'Melbourne', 'Gold Coast'],
   },
-  // South Africa Packages
-  {
-    title: 'South Africa Explorer',
-    category: 'International',
-    image: 'https://images.pexels.com/photos/1547951/pexels-photo-1547951.jpeg?auto=compress&cs=tinysrgb&w=600',
-    duration: '8 Nights / 9 Days',
-    groupSize: '2-8',
-    rating: 4.9,
-    tags: ['Safari', 'Wildlife', 'Adventure'],
-    highlights: ['Kruger National Park', 'Cape Town', 'Garden Route', 'Sun City'],
-  },
-  {
-    title: 'Cape Town & Peninsula',
-    category: 'International',
-    image: 'https://images.pexels.com/photos/2839722/pexels-photo-2839722.jpeg?auto=compress&cs=tinysrgb&w=600',
-    duration: '5 Nights / 6 Days',
-    groupSize: '2-6',
-    rating: 4.8,
-    tags: ['Coastal', 'Wine', 'Scenic'],
-    highlights: ['Table Mountain', 'Cape of Good Hope', 'Stellenbosch Winelands', 'V&A Waterfront'],
-  },
-  {
-    title: 'Kruger Safari Adventure',
-    category: 'International',
-    image: 'https://images.pexels.com/photos/247502/pexels-photo-247502.jpeg?auto=compress&cs=tinysrgb&w=600',
-    duration: '4 Nights / 5 Days',
-    groupSize: '2-6',
-    rating: 5.0,
-    tags: ['Safari', 'Big Five', 'Wildlife'],
-    highlights: ['Game Drives', 'Bush Walks', 'Sundowner Experiences', 'Luxury Safari Lodge'],
-  },
-  {
-    title: 'Pilanesberg Sun City',
-    category: 'International',
-    image: 'https://images.pexels.com/photos/1557238/pexels-photo-1557238.jpeg?auto=compress&cs=tinysrgb&w=600',
-    duration: '3 Nights / 4 Days',
-    groupSize: '2-6',
-    rating: 4.7,
-    tags: ['Safari', 'Resort', 'Entertainment'],
-    highlights: ['Pilanesberg Game Reserve', 'Sun City Resort', 'Valley of Waves', 'Casino'],
-  },
-  {
-    title: 'Garden Route Journey',
-    category: 'International',
-    image: 'https://images.pexels.com/photos/2839722/pexels-photo-2839722.jpeg?auto=compress&cs=tinysrgb&w=600',
-    duration: '6 Nights / 7 Days',
-    groupSize: '2-8',
-    rating: 4.8,
-    tags: ['Scenic', 'Coastal', 'Adventure'],
-    highlights: ['Tsitsikamma National Park', 'Knysna Lagoon', 'Oudtshoorn Caves', 'Mossel Bay'],
-  },
-  {
-    title: 'Johannesburg & Pretoria',
-    category: 'International',
-    image: 'https://images.pexels.com/photos/2079245/pexels-photo-2079245.jpeg?auto=compress&cs=tinysrgb&w=600',
-    duration: '3 Nights / 4 Days',
-    groupSize: '2-6',
-    rating: 4.6,
-    tags: ['City', 'History', 'Culture'],
-    highlights: ['Apartheid Museum', 'Soweto Tour', 'Voortrekker Monument', 'Constitution Hill'],
-  },
   // Maldives
   {
     title: 'Maldives Paradise Escape',
@@ -215,6 +154,83 @@ const packages = [
     rating: 5.0,
     tags: ['Safari', 'Wildlife', 'Big Five'],
     highlights: ['Masai Mara', 'Amboseli National Park', 'Lake Nakuru', 'Nairobi'],
+  },
+  // South Africa - Cape Town
+  {
+    title: 'Cape Town & Peninsula',
+    category: 'South Africa',
+    image: 'https://images.pexels.com/photos/2839722/pexels-photo-2839722.jpeg?auto=compress&cs=tinysrgb&w=600',
+    duration: '5 Nights / 6 Days',
+    groupSize: '2-6',
+    rating: 4.8,
+    tags: ['Coastal', 'Wine', 'Scenic'],
+    highlights: ['Table Mountain', 'Cape of Good Hope', 'Stellenbosch Winelands', 'V&A Waterfront'],
+  },
+  // South Africa - Kruger
+  {
+    title: 'Kruger National Park Safari',
+    category: 'South Africa',
+    image: 'https://images.pexels.com/photos/247502/pexels-photo-247502.jpeg?auto=compress&cs=tinysrgb&w=600',
+    duration: '4 Nights / 5 Days',
+    groupSize: '2-6',
+    rating: 5.0,
+    tags: ['Safari', 'Big Five', 'Wildlife'],
+    highlights: ['Game Drives', 'Bush Walks', 'Sundowner Experiences', 'Luxury Safari Lodge'],
+  },
+  // South Africa - Pilanesberg
+  {
+    title: 'Pilanesberg & Sun City',
+    category: 'South Africa',
+    image: 'https://images.pexels.com/photos/1557238/pexels-photo-1557238.jpeg?auto=compress&cs=tinysrgb&w=600',
+    duration: '3 Nights / 4 Days',
+    groupSize: '2-6',
+    rating: 4.7,
+    tags: ['Safari', 'Resort', 'Entertainment'],
+    highlights: ['Pilanesberg Game Reserve', 'Sun City Resort', 'Valley of Waves', 'Casino'],
+  },
+  // South Africa - Garden Route
+  {
+    title: 'Garden Route Journey',
+    category: 'South Africa',
+    image: 'https://images.pexels.com/photos/2839722/pexels-photo-2839722.jpeg?auto=compress&cs=tinysrgb&w=600',
+    duration: '6 Nights / 7 Days',
+    groupSize: '2-8',
+    rating: 4.8,
+    tags: ['Scenic', 'Coastal', 'Adventure'],
+    highlights: ['Tsitsikamma National Park', 'Knysna Lagoon', 'Oudtshoorn Caves', 'Mossel Bay'],
+  },
+  // South Africa - Johannesburg
+  {
+    title: 'Johannesburg & Pretoria',
+    category: 'South Africa',
+    image: 'https://images.pexels.com/photos/2079245/pexels-photo-2079245.jpeg?auto=compress&cs=tinysrgb&w=600',
+    duration: '3 Nights / 4 Days',
+    groupSize: '2-6',
+    rating: 4.6,
+    tags: ['City', 'History', 'Culture'],
+    highlights: ['Apartheid Museum', 'Soweto Tour', 'Voortrekker Monument', 'Constitution Hill'],
+  },
+  // South Africa - Durban
+  {
+    title: 'Durban Beach Escape',
+    category: 'South Africa',
+    image: 'https://images.pexels.com/photos/1078983/pexels-photo-1078983.jpeg?auto=compress&cs=tinysrgb&w=600',
+    duration: '4 Nights / 5 Days',
+    groupSize: '2-6',
+    rating: 4.5,
+    tags: ['Beach', 'Surfing', 'Family'],
+    highlights: ['Golden Mile Beach', 'uShaka Marine World', 'Moses Mabhida Stadium', 'Indian Market'],
+  },
+  // South Africa - Complete Tour
+  {
+    title: 'Best of South Africa Tour',
+    category: 'South Africa',
+    image: 'https://images.pexels.com/photos/1547951/pexels-photo-1547951.jpeg?auto=compress&cs=tinysrgb&w=600',
+    duration: '10 Nights / 11 Days',
+    groupSize: '2-8',
+    rating: 5.0,
+    tags: ['Complete Tour', 'Safari', 'Scenic'],
+    highlights: ['Cape Town', 'Kruger Safari', 'Garden Route', 'Sun City', 'Johannesburg'],
   },
   // Honeymoon
   {
