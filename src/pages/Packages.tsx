@@ -23,7 +23,7 @@ const packages = [
   {
     title: 'Kashmir Valley Dream',
     category: 'Domestic',
-    image: 'https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Kashmir_Valley_Dream.png',
     duration: '6 Nights / 7 Days',
     groupSize: '2-8',
     rating: 4.9,
@@ -33,7 +33,7 @@ const packages = [
   {
     title: 'Rajasthan Royal Tour',
     category: 'Domestic',
-    image: 'https://images.pexels.com/photos/3581932/pexels-photo-3581932.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Rajasthan_Royal_Tour.png',
     duration: '7 Nights / 8 Days',
     groupSize: '2-10',
     rating: 4.7,
@@ -64,7 +64,7 @@ const packages = [
   {
     title: 'Dubai Gold Experience',
     category: 'International',
-    image: 'https://images.pexels.com/photos/3310691/pexels-photo-3310691.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Dubai_Gold_Experience.png',
     duration: '5 Nights / 6 Days',
     groupSize: '2-6',
     rating: 4.8,
@@ -94,7 +94,7 @@ const packages = [
   {
     title: 'Europe Grand Tour',
     category: 'International',
-    image: 'https://images.pexels.com/photos/1391498/pexels-photo-1391498.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Europe_Grand_Tour.png',
     duration: '10 Nights / 11 Days',
     groupSize: '2-12',
     rating: 4.9,
@@ -104,7 +104,7 @@ const packages = [
   {
     title: 'Australia Adventure',
     category: 'International',
-    image: 'https://images.pexels.com/photos/1765033/pexels-photo-1765033.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Australia_Adventure.png',
     duration: '8 Nights / 9 Days',
     groupSize: '2-8',
     rating: 4.8,
@@ -159,7 +159,7 @@ const packages = [
   {
     title: 'Cape Town & Peninsula',
     category: 'South Africa',
-    image: 'https://images.pexels.com/photos/13248044/pexels-photo-13248044.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Cape_Town_&_Peninsula.png',
     duration: '5 Nights / 6 Days',
     groupSize: '2-6',
     rating: 4.8,
@@ -181,7 +181,7 @@ const packages = [
   {
     title: 'Pilanesberg & Sun City',
     category: 'South Africa',
-    image: 'https://images.pexels.com/photos/1557238/pexels-photo-1557238.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Pilanesberg_&_Sun_City.png',
     duration: '3 Nights / 4 Days',
     groupSize: '2-6',
     rating: 4.7,
@@ -192,7 +192,7 @@ const packages = [
   {
     title: 'Garden Route Journey',
     category: 'South Africa',
-    image: 'https://images.pexels.com/photos/7534375/pexels-photo-7534375.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Garden_Route_Journey.png',
     duration: '6 Nights / 7 Days',
     groupSize: '2-8',
     rating: 4.8,
@@ -203,7 +203,7 @@ const packages = [
   {
     title: 'Johannesburg & Pretoria',
     category: 'South Africa',
-    image: 'https://images.pexels.com/photos/2079245/pexels-photo-2079245.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Johannesburg_&_Pretoria.png',
     duration: '3 Nights / 4 Days',
     groupSize: '2-6',
     rating: 4.6,
@@ -225,7 +225,7 @@ const packages = [
   {
     title: 'Best of South Africa Tour',
     category: 'South Africa',
-    image: 'https://images.pexels.com/photos/1547951/pexels-photo-1547951.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Best_of_South_Africa_Tour.png',
     duration: '10 Nights / 11 Days',
     groupSize: '2-8',
     rating: 5.0,
@@ -287,7 +287,7 @@ const packages = [
   {
     title: 'Andaman Island Adventure',
     category: 'Adventure',
-    image: 'https://images.pexels.com/photos/1287465/pexels-photo-1287465.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Andaman_Island_Adventure.png',
     duration: '6 Nights / 7 Days',
     groupSize: '2-8',
     rating: 4.8,
@@ -298,7 +298,7 @@ const packages = [
   {
     title: 'Char Dham Yatra',
     category: 'Pilgrimage',
-    image: 'https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Char_Dham_Yatra.png',
     duration: '12 Nights / 13 Days',
     groupSize: '4-20',
     rating: 4.9,
@@ -309,7 +309,7 @@ const packages = [
   {
     title: 'Amarnath Yatra',
     category: 'Pilgrimage',
-    image: 'https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Amarnath_Yatra.png',
     duration: '5 Nights / 6 Days',
     groupSize: '2-15',
     rating: 5.0,
@@ -320,7 +320,7 @@ const packages = [
   {
     title: 'Vaishno Devi Pilgrimage',
     category: 'Pilgrimage',
-    image: 'https://images.pexels.com/photos/2409091/pexels-photo-2409091.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Vaishno_Devi_Pilgrimage.png',
     duration: '3 Nights / 4 Days',
     groupSize: '2-10',
     rating: 4.9,
@@ -330,7 +330,7 @@ const packages = [
   {
     title: 'Kashi Vishwanath & Gaya',
     category: 'Pilgrimage',
-    image: 'https://images.pexels.com/photos/6120408/pexels-photo-6120408.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Kashi_Vishwanath_&_Gaya.png',
     duration: '5 Nights / 6 Days',
     groupSize: '2-10',
     rating: 4.8,
@@ -340,7 +340,7 @@ const packages = [
   {
     title: 'Tirupati Balaji Darshan',
     category: 'Pilgrimage',
-    image: 'https://images.pexels.com/photos/5362192/pexels-photo-5362192.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Tirupati_Balaji_Darshan.jpg',
     duration: '3 Nights / 4 Days',
     groupSize: '2-10',
     rating: 4.9,
@@ -350,7 +350,7 @@ const packages = [
   {
     title: 'Golden Temple & Hemkund Sahib',
     category: 'Pilgrimage',
-    image: 'https://images.pexels.com/photos/3580456/pexels-photo-3580456.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Golden_Temple_&_Hemkund_Sahib.png',
     duration: '6 Nights / 7 Days',
     groupSize: '2-10',
     rating: 4.9,
@@ -360,7 +360,7 @@ const packages = [
   {
     title: 'Rameswaram & Kanyakumari',
     category: 'Pilgrimage',
-    image: 'https://images.pexels.com/photos/17698311/pexels-photo-17698311.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Rameswaram_&_Kanyakumari.png',
     duration: '4 Nights / 5 Days',
     groupSize: '2-10',
     rating: 4.8,
@@ -370,7 +370,7 @@ const packages = [
   {
     title: 'Jagannath Puri Yatra',
     category: 'Pilgrimage',
-    image: 'https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Jagannath_Puri_Yatra.png',
     duration: '5 Nights / 6 Days',
     groupSize: '2-10',
     rating: 4.8,
