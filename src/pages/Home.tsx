@@ -160,16 +160,17 @@ export default function Home({ onNavigate }: HomeProps) {
       {/* Hero */}
       <section className="relative h-[60vh] min-h-[380px] overflow-hidden">
         <div className="absolute inset-0">
-          <video
-  className="w-full h-full object-cover"
+         <video
+  key={hero.video}
+  className="w-full h-full object-cover transition-all duration-700"
   autoPlay
   muted
   loop
   playsInline
-  preload="auto"
+  preload="metadata"
+  poster={hero.image}
 >
   <source src={hero.video} type="video/mp4" />
-  Your browser does not support the video tag.
 </video>
           <div className="absolute inset-0 bg-gradient-to-b from-primary-950/60 via-primary-950/40 to-primary-950/80" />
         </div>
