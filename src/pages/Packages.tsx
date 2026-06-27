@@ -6,13 +6,13 @@ interface PackagesProps {
   initialCategory?: string;
 }
 
-const categories = ['All', 'Domestic', 'International', 'South Africa', 'Honeymoon', 'Adventure', 'Pilgrimage', 'Customized'];
+const categories = ['All', 'India', 'International', 'South Africa', 'Honeymoon', 'Adventure', 'Pilgrimage', 'Customized'];
 
 const packages = [
-  // Domestic
+  // India
   {
     title: 'Goa Beach Paradise',
-    category: 'Domestic',
+    category: 'India',
     image: 'https://images.pexels.com/photos/1078983/pexels-photo-1078983.jpeg?auto=compress&cs=tinysrgb&w=600',
     duration: '4 Nights / 5 Days',
     groupSize: '2-6',
@@ -22,7 +22,7 @@ const packages = [
   },
   {
     title: 'Kashmir Valley Dream',
-    category: 'Domestic',
+    category: 'India',
     image: '/Package_Images/Kashmir_Valley_Dream.png',
     duration: '6 Nights / 7 Days',
     groupSize: '2-8',
@@ -32,7 +32,7 @@ const packages = [
   },
   {
     title: 'Rajasthan Royal Tour',
-    category: 'Domestic',
+    category: 'India',
     image: '/Package_Images/Rajasthan_Royal_Tour.png',
     duration: '7 Nights / 8 Days',
     groupSize: '2-10',
@@ -42,7 +42,7 @@ const packages = [
   },
   {
     title: 'Kerala Backwaters Bliss',
-    category: 'Domestic',
+    category: 'India',
     image: 'https://images.pexels.com/photos/962464/pexels-photo-962464.jpeg?auto=compress&cs=tinysrgb&w=600',
     duration: '5 Nights / 6 Days',
     groupSize: '2-6',
@@ -52,7 +52,7 @@ const packages = [
   },
   {
     title: 'Himachal Himalayan Escape',
-    category: 'Domestic',
+    category: 'India',
     image: 'https://images.pexels.com/photos/2335126/pexels-photo-2335126.jpeg?auto=compress&cs=tinysrgb&w=600',
     duration: '6 Nights / 7 Days',
     groupSize: '2-8',
