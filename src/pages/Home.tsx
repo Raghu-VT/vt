@@ -52,7 +52,7 @@ const featuredDestinations = [
   {
     name: 'Dubai',
     tagline: 'City of Gold',
-    image: 'https://images.pexels.com/photos/3310691/pexels-photo-3310691.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Dubai_Gold_Experience.png',
     duration: '4 Nights',
   },
   {
