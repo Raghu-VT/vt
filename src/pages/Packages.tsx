@@ -308,7 +308,7 @@ const packages = [
   },
   {
   title: 'Kailash Mansarovar Yatra',
-  category: 'International',
+  category: 'India',
   image: '/Package_Images/Kailash_Manasarovar_Yatra.png',
   duration: '14 Nights / 15 Days',
   groupSize: '10-30',
