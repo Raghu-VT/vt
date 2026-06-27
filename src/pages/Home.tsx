@@ -11,6 +11,7 @@ interface HomeProps {
 
 const heroSlides = [
   {
+    video: "/Animation_Video/"
     image: 'https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=1600',
     title: 'Where Dreams Meet Destinations',
     subtitle: 'Your trusted travel partner for over 22 years. ISO 9001:2015 Certified.',
@@ -157,11 +158,17 @@ export default function Home({ onNavigate }: HomeProps) {
       {/* Hero */}
       <section className="relative h-[60vh] min-h-[380px] overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src={hero.image}
-            alt="Hero"
-            className="w-full h-full object-cover transition-all duration-700"
-          />
+          <video
+  className="w-full h-full object-cover"
+  autoPlay
+  muted
+  loop
+  playsInline
+  preload="auto"
+>
+  <source src={hero.video} type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
           <div className="absolute inset-0 bg-gradient-to-b from-primary-950/60 via-primary-950/40 to-primary-950/80" />
         </div>
 
