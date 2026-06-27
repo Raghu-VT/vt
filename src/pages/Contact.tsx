@@ -50,21 +50,56 @@ export default function Contact({ onNavigate: _onNavigate }: ContactProps) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitting(true);
-    setError('');
-    try {
-      const res = await fetch(
-  "https://www.venkitravel.com/api/send-contact.php",
-  {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(form),
-  }
-);
+  e.preventDefault();
 
+  setSubmitting(true);
+  setError('');
+
+  try {
+    const response = await fetch(
+      'https://www.venkitravel.com/api/send-contact.php',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          name: form.name.trim(),
+          email: form.email.trim(),
+          phone: form.phone.trim(),
+          subject: form.subject,
+          message: form.message.trim(),
+        }),
+      }
+    );
+
+    const data = await response.json();
+
+    if (!response.ok || !data.success) {
+      throw new Error(
+        data.message || 'Unable to send your enquiry. Please try again.'
+      );
+    }
+
+    setSubmitted(true);
+
+    setForm({
+      name: '',
+      email: '',
+      phone: '',
+      subject: '',
+      message: '',
+    });
+  } catch (err: any) {
+    setError(
+      err.message ||
+        'Unable to send your enquiry. Please try again later.'
+    );
+  } finally {
+    setSubmitting(false);
+  }
+};
 const data = await res.json();
 
 if (!res.ok || data.error) {
