@@ -307,6 +307,22 @@ const packages = [
     description: 'The sacred Char Dham Yatra covers the four holy shrines of Uttarakhand. Experience divine energy at Yamunotri (source of Yamuna), Gangotri (source of Ganga), Kedarnath (one of 12 Jyotirlingas), and Badrinath (abode of Lord Vishnu).',
   },
   {
+  title: 'Kailash Mansarovar Yatra',
+  category: 'International',
+  image: '/Package_Images/Kailash_Mansarovar_Yatra.png',
+  duration: '14 Nights / 15 Days',
+  groupSize: '10-30',
+  rating: 5.0,
+  tags: ['Spiritual', 'Pilgrimage', 'Adventure'],
+  highlights: [
+    'Mount Kailash Parikrama',
+    'Holy Mansarovar Lake',
+    'Yam Dwar',
+    'Rakshas Tal'
+  ],
+  description: 'Embark on the sacred Kailash Mansarovar Yatra, one of the most revered pilgrimages in the world. Seek the blessings of Mount Kailash, believed to be the abode of Lord Shiva, take a holy dip in the pristine Mansarovar Lake, and experience a spiritually transformative journey amidst the breathtaking Himalayan landscape.'
+},
+  {
     title: 'Amarnath Yatra',
     category: 'India',
     image: '/Package_Images/Amarnath_Yatra.png',
