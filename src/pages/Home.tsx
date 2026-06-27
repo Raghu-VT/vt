@@ -349,7 +349,7 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { icon: Award, title: 'Legacy of Trust', desc: '25 years of industry expertise — synonymous with reliability and quality.' },
+              { icon: Award, title: 'Legacy of Trust', desc: '22 years of industry expertise — synonymous with reliability and quality.' },
               { icon: Globe, title: 'Global Reach', desc: 'Worldwide network ensuring world-class experiences tailored to your preferences.' },
               { icon: Shield, title: 'ISO 9001:2015 Certified', desc: 'Certified quality management — delivering excellence in every service.' },
               { icon: Users, title: 'Customer-First Approach', desc: 'Dedicated team available at every step to ensure your satisfaction.' },
