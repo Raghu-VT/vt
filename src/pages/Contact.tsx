@@ -172,7 +172,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                     name="phone"
                     value={form.phone}
                     onChange={handleChange}
-                    placeholder="+91 XXXXX XXXXX"
+                    placeholder="XXXXX XXXXX"
                     className="w-full border border-neutral-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-secondary-400 focus:border-transparent transition"
                   />
                 </div>
