@@ -13,7 +13,7 @@ const navItems = [
     label: 'Tour Packages',
     page: 'packages',
     children: [
-      { label: 'Domestic Packages', page: 'packages#Domestic' },
+      { label: 'India Packages', page: 'packages#Domestic' },
       { label: 'International Packages', page: 'packages#International' },
       { label: 'Customized Packages', page: 'packages#Customized' },
       { label: 'Seasonal Packages', page: 'packages' },
