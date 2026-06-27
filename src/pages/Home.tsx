@@ -213,6 +213,7 @@ export default function Home({ onNavigate }: HomeProps) {
             <span>IATA Accredited</span>
             <span className="text-secondary-300">|</span>
             <a href="tel:+919248070008" className="text-black hover:text-secondary-300 transition-colors">+91 92480-70008</a>
+             <a href="tel:+919248070008" className="text-black hover:text-secondary-300 transition-colors">+27 823126688</a>
             <span className="text-secondary-300">|</span>
             <a href="mailto:info@venkitravel.com" className="text-black hover:text-secondary-300 transition-colors">info@venkitravel.com</a>
           </div>
