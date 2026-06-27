@@ -6,7 +6,7 @@ interface PackagesProps {
   initialCategory?: string;
 }
 
-const categories = ['All', 'India', 'International', 'South Africa', 'Honeymoon', 'Adventure', 'Pilgrimage', 'Customized'];
+const categories = ['All', 'India', 'International', 'South Africa', 'Honeymoon', 'Adventure', 'Customized'];
 
 const packages = [
   // India
@@ -297,7 +297,7 @@ const packages = [
   // Pilgrimage
   {
     title: 'Char Dham Yatra',
-    category: 'Pilgrimage',
+    category: 'India',
     image: '/Package_Images/Char_Dham_Yatra.png',
     duration: '12 Nights / 13 Days',
     groupSize: '4-20',
@@ -308,7 +308,7 @@ const packages = [
   },
   {
     title: 'Amarnath Yatra',
-    category: 'Pilgrimage',
+    category: 'India',
     image: '/Package_Images/Amarnath_Yatra.png',
     duration: '5 Nights / 6 Days',
     groupSize: '2-15',
@@ -319,7 +319,7 @@ const packages = [
   },
   {
     title: 'Vaishno Devi Pilgrimage',
-    category: 'Pilgrimage',
+    category: 'India',
     image: '/Package_Images/Vaishno_Devi_Pilgrimage.png',
     duration: '3 Nights / 4 Days',
     groupSize: '2-10',
@@ -329,7 +329,7 @@ const packages = [
   },
   {
     title: 'Kashi Vishwanath & Gaya',
-    category: 'Pilgrimage',
+    category: 'India',
     image: '/Package_Images/Kashi_Vishwanath_&_Gaya.png',
     duration: '5 Nights / 6 Days',
     groupSize: '2-10',
@@ -339,7 +339,7 @@ const packages = [
   },
   {
     title: 'Tirupati Balaji Darshan',
-    category: 'Pilgrimage',
+    category: 'India',
     image: '/Package_Images/Tirupati_Balaji_Darshan.jpg',
     duration: '3 Nights / 4 Days',
     groupSize: '2-10',
@@ -349,7 +349,7 @@ const packages = [
   },
   {
     title: 'Golden Temple & Hemkund Sahib',
-    category: 'Pilgrimage',
+    category: 'India',
     image: '/Package_Images/Golden_Temple_&_Hemkund_Sahib.png',
     duration: '6 Nights / 7 Days',
     groupSize: '2-10',
@@ -359,7 +359,7 @@ const packages = [
   },
   {
     title: 'Rameswaram & Kanyakumari',
-    category: 'Pilgrimage',
+    category: 'India',
     image: '/Package_Images/Rameswaram_&_Kanyakumari.png',
     duration: '4 Nights / 5 Days',
     groupSize: '2-10',
@@ -369,7 +369,7 @@ const packages = [
   },
   {
     title: 'Jagannath Puri Yatra',
-    category: 'Pilgrimage',
+    category: 'India',
     image: '/Package_Images/Jagannath_Puri_Yatra.png',
     duration: '5 Nights / 6 Days',
     groupSize: '2-10',
