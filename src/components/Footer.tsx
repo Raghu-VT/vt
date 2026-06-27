@@ -19,7 +19,7 @@ export default function Footer({ onNavigate }: FooterProps) {
           <div>
             <img src="./VT_Logo.png" alt="Venki Travel" className="h-12 w-auto mb-4" />
             <p className="text-neutral-300 text-sm leading-relaxed mb-4">
-              Your trusted travel partner for over 25 years. ISO 9001:2015 Certified & IATA Accredited.
+              Your trusted travel partner for over 22 years. ISO 9001:2015 Certified & IATA Accredited.
             </p>
             <div className="flex gap-3 mt-4">
               {[Facebook, Instagram, Twitter, Youtube].map((Icon, i) => (
