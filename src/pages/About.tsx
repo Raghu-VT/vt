@@ -6,7 +6,7 @@ interface AboutProps {
 }
 
 const whyUs = [
-  { icon: Award, title: 'Legacy of Trust', desc: 'With 25 years of industry expertise, we are synonymous with reliability and quality.' },
+  { icon: Award, title: 'Legacy of Trust', desc: 'With 22 years of industry expertise, we are synonymous with reliability and quality.' },
   { icon: Globe, title: 'Comprehensive Services', desc: 'From planning to execution, we cover every aspect of your travel under one roof.' },
   { icon: Globe, title: 'Global Reach', desc: 'Our worldwide network ensures world-class experiences tailored to your preferences.' },
   { icon: Users, title: 'Customer-Centric', desc: 'Your satisfaction is our priority. Our dedicated team assists you at every step.' },
@@ -136,7 +136,7 @@ export default function About({ onNavigate }: AboutProps) {
               <CheckCircle size={16} className="text-secondary-500" /> IATA Accredited
             </div>
             <div className="flex items-center gap-2 text-sm text-neutral-700">
-              <CheckCircle size={16} className="text-secondary-500" /> 25+ Years Experience
+              <CheckCircle size={16} className="text-secondary-500" /> 22+ Years Experience
             </div>
           </div>
         </div>
@@ -192,7 +192,7 @@ export default function About({ onNavigate }: AboutProps) {
               <p className="text-secondary-300 text-xs sm:text-sm uppercase tracking-wider mb-2">Founder & CEO</p>
               <h2 className="font-heading text-2xl sm:text-3xl font-700 mb-3 sm:mb-4">Raghu Babu</h2>
               <p className="text-neutral-200 leading-relaxed mb-4">
-                At the heart of Venkitravel is our founder and CEO, Mr. Babu, a seasoned leader with over 25 years of experience in the travel industry. Born in a small town in Andhra Pradesh, Mr. Babu’s passion for exploring new places and creating memorable travel experiences has been the driving force behind his career. A graduate of Nagarjuna University, his journey began with an esteemed travel organization, where he gained valuable insights into the industry and nurtured a vision to make travel seamless and accessible for everyone.
+                At the heart of Venkitravel is our founder and CEO, Mr. Babu, a seasoned leader with over 22 years of experience in the travel industry. Born in a small town in Andhra Pradesh, Mr. Babu’s passion for exploring new places and creating memorable travel experiences has been the driving force behind his career. A graduate of Nagarjuna University, his journey began with an esteemed travel organization, where he gained valuable insights into the industry and nurtured a vision to make travel seamless and accessible for everyone.
               </p>
               <p className="text-neutral-200 leading-relaxed mb-4">
                 In 2004, Mr. Babu turned his vision into reality by founding Venkitravel. Starting with air ticket booking, he gradually expanded the company’s offerings to include a wide range of travel services such as Forex Services, Hotel Booking, Cruise Booking, Tour Packages, Visa Processing, Passport Assistance, Travel Insurance, Transport and Transfers, and Accommodation Services. Today, Venkitravel is a trusted name in the travel industry, recognized for its customer-first approach and exceptional service quality.
