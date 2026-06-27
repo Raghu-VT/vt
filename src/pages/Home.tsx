@@ -11,7 +11,7 @@ interface HomeProps {
 
 const heroSlides = [
   {
-    video: "/Animation_Video/"
+    video: "/Animation_Video/Banner_Animation1.mp4"
     image: 'https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=1600',
     title: 'Where Dreams Meet Destinations',
     subtitle: 'Your trusted travel partner for over 22 years. ISO 9001:2015 Certified.',
