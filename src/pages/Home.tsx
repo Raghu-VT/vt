@@ -159,7 +159,7 @@ export default function Home({ onNavigate }: HomeProps) {
     <div>
       {/* Hero */}
       <section className="relative h-[60vh] min-h-[380px] overflow-hidden">
-        <div className="absolute inset-0">
+        {/* <div className="absolute inset-0">
          <video
   key={hero.video}
   className="w-full h-full object-cover transition-all duration-700"
@@ -173,7 +173,21 @@ export default function Home({ onNavigate }: HomeProps) {
   <source src={hero.video} type="video/mp4" />
 </video>
           <div className="absolute inset-0 bg-gradient-to-b from-primary-950/60 via-primary-950/40 to-primary-950/80" />
-        </div>
+        </div> */}
+        <div key={heroIndex} className="absolute inset-0">
+  <video
+    src={hero.video}
+    className="w-full h-full object-cover"
+    autoPlay
+    muted
+    loop
+    playsInline
+    preload="metadata"
+    poster={hero.image}
+  />
+
+  <div className="absolute inset-0 bg-gradient-to-b from-primary-950/60 via-primary-950/40 to-primary-950/80" />
+</div>
 
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4 text-center">
           <div className="animate-fade-in">
