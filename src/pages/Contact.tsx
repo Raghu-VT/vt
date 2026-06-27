@@ -57,7 +57,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
   try {
     const response = await fetch(
-      'https://www.venkitravel.com/api/mail.php',
+      '/api/mail.php',
       {
         method: 'POST',
         headers: {
