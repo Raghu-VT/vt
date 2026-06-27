@@ -100,25 +100,7 @@ const handleSubmit = async (e: React.FormEvent) => {
     setSubmitting(false);
   }
 };
-const data = await res.json();
-
-if (!res.ok || data.error) {
-  setError(data.error || "Failed to send message");
-} else {
-  setSubmitted(true);
-  setForm({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
-  });
-}
-    } catch {
-      setError('Network error. Please try again or email us at info@venkitravel.com');
-    }
-    setSubmitting(false);
-  };
+  
   return (
     <div className="min-h-screen">
       {/* Hero */}
