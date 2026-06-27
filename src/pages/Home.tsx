@@ -119,7 +119,7 @@ const deals = [
   {
     title: 'Early Bird Dubai Deal',
     discount: '30% OFF',
-    image: 'https://images.pexels.com/photos/3310691/pexels-photo-3310691.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/Package_Images/Dubai_Gold_Experience.png',
     validity: 'Valid till June 30',
     tag: 'Early Bird',
   },
